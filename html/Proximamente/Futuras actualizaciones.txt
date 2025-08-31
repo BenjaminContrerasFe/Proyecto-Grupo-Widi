@@ -1,1 +1,0 @@
-Los archivos que se encuentran dentro de esta carpeta, por el momento no pueden ser avanzados debido a la limitacion que nos da la primera entrega. Ya que para poder hacer uso de estas pagina, como minimo se necesitaria JS.
