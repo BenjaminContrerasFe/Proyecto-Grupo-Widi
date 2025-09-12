@@ -32,4 +32,6 @@ nav ul {
   display: flex;
   gap: 15px;
   justify-content: center;
+   margin: 0;
+  padding: 0;
 }
