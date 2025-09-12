@@ -18,6 +18,8 @@ header img {
 nav {
       display: flex;
       background: linear-gradient(to right, #000, #b8860b);
+       border-radius: 10px;
+       padding: 10px;
     }
 nav button{
     background: #444;
