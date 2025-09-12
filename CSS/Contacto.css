@@ -4,3 +4,16 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+     background: #f4f6f8;
+    color: #000000;
+    line-height: 1.6;
+      background-image: 
+      repeating-linear-gradient(
+        45deg,
+        #1a1a1a 0px,
+        #1a1a1a 2px,
+        #111 2px,
+        #111 20px
+        );
+}
