@@ -22,7 +22,7 @@ nav {
       background: linear-gradient(to right, #000, #b8860b);
        padding: 10px  0;; 
        gap: 20px;
-       width: 120%;
+       width: 103%;
     }
 nav button{
     background: #444;
@@ -72,6 +72,8 @@ nav a {
       min-height: calc(100vh - 160px);
       align-items: center;
       position: relative;
+      margin-left: 100%;
+
     }
  .autito h2 {
       margin: 10px 0;
