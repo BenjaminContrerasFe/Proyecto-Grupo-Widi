@@ -15,3 +15,6 @@ header {
 header img {
       height: 300px;
     }
+nav {
+      display: flex;
+    }
