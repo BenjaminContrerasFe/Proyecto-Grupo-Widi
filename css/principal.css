@@ -19,12 +19,8 @@ header img {
 nav {
       display: flex;
        justify-content: center; 
-        align-items: center;
       background: linear-gradient(to right, #000, #b8860b);
-       border-radius: 0;
        padding: 10px; 
-        width: 100%;
-         box-sizing: border-box;
     }
 nav button{
     background: #444;
