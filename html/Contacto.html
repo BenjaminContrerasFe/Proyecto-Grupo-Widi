@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../CSS/Contacto.css">
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <h1>Deushcland</h1>
+            <img class="logo" src="../img/logo.jpeg" alt="Logo-empresa" height="300" width="300" title="Logo-empresa">
+        </div>
+        <nav>
+            <ul id="Horizontal">
+                <li><a href="Principal.html">Volver</a></li>
+                <li><a href="soporte.html">Soporte técnico</a>
+                        <ul class="Vertical">
+                            <li><a href="soporte.html">Preguntas frecuentes</a></li>
+                        </ul>
+                </li>
+                <li><a href="nosotros.html">Quiénes somos</a></li>
+                <li><a href="">Sucursales</a>
+                        <ul class="Vertical">
+                            <li><a href="">Planes y horarios</a></li>
+                        </ul>
+                </li>
+                <li><a href="perfil.html">Perfil</a></li>
+        </nav>
+    </header>
+    <main>
+        <div class="Titulo">
+            <h2>Servicios</h2>
+            <p>En nuestra concesionaria ofrecemos un servicio integral pensado para cubrir todas las necesidades de tu vehículo. Desde el asesoramiento en la compra de un auto, hasta su mantenimiento preventivo y asistencia técnica especializada, trabajamos para garantizar confianza, seguridad y calidad en cada paso. Nuestro compromiso es acompañarte en todo el ciclo de vida de tu automóvil, brindándote soluciones rápidas, efectivas y con respaldo oficial.</p>
+        </div>
+        <div class="contenido">
+            <img src="../img/Contacto/pngtree-nut-line-icon-png-image_9016323.png" alt="Tuerca-servicios" height="300" width="300">
+            <p>Servicio de mecánica general: nuestro taller cuenta con equipamiento de última generación para el diagnóstico y reparación de vehículos. Realizamos mantenimiento preventivo, cambio de aceite, revisión de frenos, alineación y balanceo, corrección de fallas electrónicas y reparación de motor. Todo el trabajo es realizado por técnicos especializados, garantizando seguridad y el mejor rendimiento de tu auto.</p>
+            <img src="../img/Contacto/logo auto.png" alt="Auto-servicios" height="300" width="300">
+            <p>Venta de vehículos nuevos y usados certificados: ofrecemos una amplia gama de modelos de distintas marcas, todos con garantía oficial y en excelente estado. Además, contamos con planes de financiación flexibles, asesoramiento personalizado en la compra y la posibilidad de recibir tu auto usado como parte de pago. Nuestro objetivo es que encuentres el vehículo perfecto para tus necesidades y tu presupuesto.</p>
+            <img src="../img/Contacto/libro.webp" alt="Libro-servicios" height="300" width="300">
+            <p>Soporte técnico especializado: brindamos asistencia personalizada para resolver cualquier consulta relacionada con tu vehículo, desde dudas sobre el funcionamiento hasta reclamos por garantía. También ofrecemos asesoramiento en la compra de repuestos originales, actualizaciones de software del vehículo y asistencia en carretera las 24 horas, los 7 días de la semana. Tu tranquilidad al volante es nuestra prioridad.</p>
+        </div>
+        <div class="formulario">
+            <form action="">
+                <fieldset>
+                    <div class="nom_ape">
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" name="Nom_usuario" id="nombre" required><br>
+                        <label for="apellido">Apellido</label><br>
+                        <input type="text" name="Ape_usuario" id="apellido"><br>
+                    </div>
+                    <div class="generos">
+                        <label>Indique su genero</label><br>
+                        <input type="radio" name="opc" id="Masc" checked>
+                        <label for="Masc">Masculino</label><br>
+                        <input type="radio" name="opc" id="Fem">
+                        <label for="Fem">Femenino</label><br>
+                    </div>
+                    <div class="email">
+                        <label for="email">Email</label><br>
+                        <input type="email" name="Email" id="email" required><br>
+                    </div>
+                    <div class="Opciones">
+                        <select name="opc" id="Opc" value="opc" aria-label="Motivo de la Consulta *">
+                            <option selected="" value="">Por favor, escoja un tema.</option>
+                            <option value="opc">Accidentalmente choque a E. Wiedermann y me va a desaprobar</option>
+                            <option value="opc">A mi auto le salieron alas</option>
+                            <option value="opc">Compre mi auto y me dieron solo una foto .jpg del mismo</option>
+                        </select><br>
+                    </div>
+                    <div class="notify">
+                        <input type="checkbox" name="Recibir" id="Recibir">
+                        <label for="Recibir">Quiere recibir notificaciones para futuras promociones?</label>
+                    </div>
+                </fieldset>
+                <input type="submit" id="enviar" value="enviar">
+            </form>
+        </div>
+    </main>
+    <footer>
+    <hr>
+    <p>&copy; 2025 Deushcland. Todos los derechos reservados.</p>
+    <p>Contacto: Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
+    <div>
+    <a href="https://www.facebook.com/?locale=es_ES">Facebook</a> 
+    <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+</footer>
+</body>
+</html>
