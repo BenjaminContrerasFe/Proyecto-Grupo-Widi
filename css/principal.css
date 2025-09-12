@@ -44,7 +44,14 @@ nav a {
   color: white;
   font-weight: bold;
 }
+.intro{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+     padding: 10px 0;
+      gap: 20px;
 
+}
  main {
       background: linear-gradient(to bottom, #b8860b, #000); /* efecto difuminado dorado-negro */
       padding: 20px;
