@@ -44,13 +44,21 @@ nav a {
   color: white;
   font-weight: bold;
 }
+
 .intro{
     display: flex;
     text-align: center;
+    font-family: serif;
     justify-content: center;
      padding: 10px 0;
       gap: 20px;
       font-size: 50px;
+     
+      margin: 10% 10% 10% 10%;
+      background-image: url(../img/auto-fondo.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
 
 }
  main {
