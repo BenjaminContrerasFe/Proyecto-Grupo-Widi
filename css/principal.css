@@ -66,35 +66,41 @@ nav a {
   
 }
  main {
-      background: linear-gradient(to bottom, #b8860b, #000); /* efecto difuminado dorado-negro */
+     background: linear-gradient(to bottom, #2e2d2d, #000); /* efecto difuminado dorado-negro */
       padding: 20px;
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
       text-align: center;
-      
+  
     }
-.autito {
+    .autito {
       background: #333;
       border-radius: 12px;
       overflow: hidden;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       margin: 20px;
+ 
     }
- .autito img {
-      width: 100%;
-      display: block;
-    }    
-.contenido {
+    .contenido {
       display: grid;
       grid-template-columns: 300px 300px 300px ;
       min-height: calc(100vh - 160px);
       align-items: center;
       position: relative;
-      margin-left: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+
+
+   
 
     }
+
+ .autito img {
+      width: 100%;
+      display: block;
+    }    
+
  .autito h2 {
       margin: 10px 0;
       color: white;
