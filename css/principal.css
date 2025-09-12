@@ -70,3 +70,8 @@ nav a {
       grid-template-columns: 300px 300px 300px ;
       min-height: calc(100vh - 160px);
     }
+ .autito h2 {
+      margin: 10px 0;
+      color: white;
+      font-size: 18px;
+    }
