@@ -65,3 +65,8 @@ nav a {
       width: 100%;
       display: block;
     }    
+.contenido {
+      display: grid;
+      grid-template-columns: 500px ;
+      min-height: calc(100vh - 160px);
+    }
