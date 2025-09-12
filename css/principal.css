@@ -51,6 +51,7 @@ nav a {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
       gap: 20px;
+      text-align: center;
       
     }
 .autito {
@@ -59,7 +60,7 @@ nav a {
       overflow: hidden;
       text-align: center;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-      transition: transform 0.3s;
+      margin: 20px;
     }
  .autito img {
       width: 100%;
@@ -69,6 +70,8 @@ nav a {
       display: grid;
       grid-template-columns: 300px 300px 300px ;
       min-height: calc(100vh - 160px);
+      align-items: center;
+      position: relative;
     }
  .autito h2 {
       margin: 10px 0;
