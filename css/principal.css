@@ -17,4 +17,5 @@ header img {
     }
 nav {
       display: flex;
+       background: linear-gradient(to right, #000, #b8860b);
     }
