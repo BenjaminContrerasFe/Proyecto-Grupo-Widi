@@ -24,4 +24,5 @@ nav button{
       color: white;
       padding: 6px 14px;
       border-radius: 20px;
+      border: none;      
 }
