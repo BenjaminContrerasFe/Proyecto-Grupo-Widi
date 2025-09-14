@@ -54,3 +54,11 @@ main{
     font-weight: bold;
     color: gold;
 }
+
+.decoracion span{
+    background: linear-gradient(90deg,gold,#fff,gold);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    background-size: 200%;
+    }
