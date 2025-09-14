@@ -19,7 +19,7 @@ main{
     gap: 20px;
 }
 
-.logo {
+.Titulo.logo {
     position: absolute;
     top: 20px;       /* Con esto lo pego al borde superior */
     left: 50%;       /* Esto lo centro horizontalmente */
