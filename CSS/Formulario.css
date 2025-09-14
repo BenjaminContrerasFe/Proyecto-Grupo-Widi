@@ -88,3 +88,9 @@ main{
     outline:none;
     background:#fff;
 }
+
+.botones{
+    display:flex;
+    gap:12px;
+    margin-top:4px;
+}
