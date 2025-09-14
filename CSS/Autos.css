@@ -80,8 +80,7 @@ display: flex; /* Esto las pone en fila horizontal */
 }
 .galleria img {
   margin: 0 -5% 0 -5%;
-  max-width: 100%;        /* Nunca más ancho que su contenedor */
-  width: 450px;            
+  max-width: 100%;        /* Nunca más ancho que su contenedor */          
   display: block;         
   border-radius: 8px;
 }
