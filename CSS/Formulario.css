@@ -94,3 +94,13 @@ main{
     gap:12px;
     margin-top:4px;
 }
+
+.boton{
+    flex:1;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:10px;
+    background:#fff;
+    cursor:pointer;
+    transition: background-color 1s, transform 1s;
+}
