@@ -4,7 +4,6 @@ body {
   background-color: #1e1e1e;
   color: #ffffff;
 }
-
 header {
       background: linear-gradient(to bottom, #000, #222);
       padding: 20px;
@@ -65,4 +64,10 @@ nav a {
   font-size: 18px;
   margin: 5px 0;
   font-weight: bold;
+}
+.galleria{
+display: flex; /* Esto las pone en fila horizontal */
+  gap: 10px;     /* Espacio entre imágenes (opcional) */
+  justify-content: center; /* Centrar todo (opcional) */
+  align-items: center; /* Alinearlas verticalmente */
 }
