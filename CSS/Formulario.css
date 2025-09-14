@@ -7,7 +7,7 @@ body{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 
-    background: url() no-repeat center center/cover;
+    background: url("..\img\FormularioIMG\0VsWwL.jpg") no-repeat center center/cover;
     background-size: 100% 100%;
 }
 
@@ -18,7 +18,7 @@ main{
     gap: 20px;
 }
 
-#logo {
+.logo {
     position: absolute;
     top: 20px;       /* Con esto lo pego al borde superior */
     left: 50%;       /* Esto lo centro horizontalmente */
@@ -28,15 +28,15 @@ main{
     justify-content: center;
 }
 
-#logo img{
+.logo img{
     border-radius: 50%;
     width: 100px;
     height: 100px;
     border: #000 solid 5px;
 }
 
-#logo::before,
-#logo::after {
+.logo::before,
+.logo::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -45,8 +45,8 @@ main{
     background: linear-gradient(to right, gold, #fff8b3, gold);
 }
 
-#logo::before { left: -140px; }
-#logo::after  { right: -140px; }
+.logo::before { left: -140px; }
+.logo::after  { right: -140px; }
 
 .decoracion {
     text-align: center;
@@ -105,7 +105,7 @@ main{
     transition: background-color 1s, transform 1s;
 }
 
-.btn:hover{
+.boton:hover{
     background:#f2f2f2;
     transform: scale(1.05);
 }
