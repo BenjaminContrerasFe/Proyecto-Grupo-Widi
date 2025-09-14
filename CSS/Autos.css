@@ -84,3 +84,18 @@ display: flex; /* Esto las pone en fila horizontal */
   display: block;         
   border-radius: 8px;
 }
+.boton-comparar {
+  background-color: #aaa;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.boton-comparar:hover {
+  background-color: goldenrod;
+  color: black;
+}
