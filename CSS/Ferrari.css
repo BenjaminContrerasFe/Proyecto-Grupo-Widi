@@ -14,11 +14,12 @@ header {
       align-items: center;
       position: relative;
       padding-bottom: 0px;
-    }
+}
 
 header img {
       height: 300px;
-    }
+}
+
 nav {
       display: flex;
        justify-content: center; 
@@ -26,4 +27,12 @@ nav {
        padding: 10px  0;; 
        gap: 20px;
        width: 103%;
-    }
+}
+
+nav button{
+    background: #444;
+      color: white;
+     padding: 8px 16px;
+      border-radius: 20px;
+      border: 2px solid #444;    
+}
