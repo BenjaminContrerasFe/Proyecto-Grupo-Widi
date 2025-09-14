@@ -44,3 +44,6 @@ main{
     height: 3px;
     background: linear-gradient(to right, gold, #fff8b3, gold);
 }
+
+#logo::before { left: -140px; }
+#logo::after  { right: -140px; }
