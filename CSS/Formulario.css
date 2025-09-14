@@ -61,4 +61,9 @@ main{
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
     background-size: 200%;
-    }
+}
+
+@keyframes shine {
+    0% {background-position: 200% center;}
+    100% {background-position: -200% center;}
+}
