@@ -47,3 +47,10 @@ main{
 
 #logo::before { left: -140px; }
 #logo::after  { right: -140px; }
+
+.decoracion {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: gold;
+}
