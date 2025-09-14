@@ -50,6 +50,8 @@ nav a {
 #division{
       display: flex;
       justify-content: left;
+      height: 100%;
+      width: 100%;
 }
 
 .info-auto{
