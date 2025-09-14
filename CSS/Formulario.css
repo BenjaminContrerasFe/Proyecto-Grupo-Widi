@@ -104,3 +104,8 @@ main{
     cursor:pointer;
     transition: background-color 1s, transform 1s;
 }
+
+.btn:hover{
+    background:#f2f2f2;
+    transform: scale(1.05);
+}
