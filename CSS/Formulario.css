@@ -79,3 +79,12 @@ main{
     gap:12px;
     border: goldenrod solid 5px;
 }
+
+.campo{
+    padding:10px 12px;
+    border:1px solid #000;
+    border-radius:10px;
+    text-align:center;
+    outline:none;
+    background:#fff;
+}
