@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-image: url("Imagenes/fondo.jpeg");
+  background-size: cover;       /* hace que la imagen cubra toda la pantalla */
+  background-position: center;  /* centra la imagen */
+  background-repeat: no-repeat;
+}
