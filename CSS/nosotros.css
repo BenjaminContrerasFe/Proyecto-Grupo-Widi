@@ -14,3 +14,8 @@ body{
     --gray-medium: #9b9e9f;
     --gray-light: #e1e1e1;
 }
+
+a{
+    color:var(--gray-medium);
+    text-decoration: none;
+}
