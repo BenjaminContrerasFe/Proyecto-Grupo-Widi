@@ -121,3 +121,8 @@ padding: 0;
 #Horizontal li:hover, .Vertical li:hover {
     box-shadow: 0 0 3px 1px  inset var(--silver-primary)  ;
 }
+
+main{
+    background: linear-gradient(180deg,var(--gray-light), var(--gray-medium), var(--gray-light));
+    background-position: center; 
+}
