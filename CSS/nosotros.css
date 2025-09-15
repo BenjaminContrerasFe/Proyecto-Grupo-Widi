@@ -59,3 +59,30 @@ ul{
     list-style: none;
         margin: 0;
 }
+
+#Horizontal{
+margin: 0;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(1, 1fr);
+gap: 0;
+padding: 0;
+}
+
+#Horizontal li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#Horizontal li{
+    border: solid var(--silver-primary) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 20px;
+    padding: 0;
+}
