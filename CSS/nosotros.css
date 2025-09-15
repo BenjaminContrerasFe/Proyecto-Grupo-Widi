@@ -371,3 +371,12 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+#FC{
+    background-color: var(--gray-light);
+    padding: 20px;
+    border-radius: 10px 200rem ;
+    justify-items: center;
+    box-shadow: var(--gray-light) 0 0 3px 1px;
+    color: var(--black-soft);
+}
