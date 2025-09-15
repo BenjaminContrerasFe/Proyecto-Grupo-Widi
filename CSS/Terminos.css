@@ -33,3 +33,6 @@ main {
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
+.titulo p {
+    color: var(--gray-medium);
+}
