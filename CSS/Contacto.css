@@ -63,3 +63,14 @@ nav a {
     justify-content: center;
     gap: 30px;
 }
+.menu a {
+    text-decoration: none;
+    color: gold;
+    font-size: 18px;
+    transition: color 0.3s;
+    box-shadow: 5px 4px 15px 0px #e0a800;
+}
+
+.menu a:hover {
+    color: #e0a800;
+}
