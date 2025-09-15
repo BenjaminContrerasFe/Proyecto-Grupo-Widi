@@ -161,8 +161,19 @@ input[type="text"],input[type="email"],select {
 }
 input[type="text"]:focus,input[type="email"]:focus,select:focus {
     border-color: gold;
+    border: 2px solid gold;
     outline: none;
 }
+/* RADIO Y CHECKBOX - alineado horizontal */
+.generos label,.notify label {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+
+
 
 
 
