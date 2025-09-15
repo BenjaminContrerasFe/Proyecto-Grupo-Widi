@@ -304,3 +304,15 @@ main{
 .C:hover {
     transform: translateY(-5px);
 }
+
+#Garantia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    margin: 30px;
+    background-color: var(--black-soft);
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem ;
+    box-shadow: 0 0 4px 1px var(--black-soft);
+}
