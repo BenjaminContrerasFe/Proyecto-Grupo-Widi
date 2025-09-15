@@ -76,3 +76,13 @@ body {
 .Presentacion .btn:hover {
   background: #e68900;
 }
+
+.autos {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.autos h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
