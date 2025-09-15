@@ -392,3 +392,8 @@ main{
     border: solid 1px var(--black-soft);
     border-radius: 0.2rem;
 }
+
+#FC #Botones button a{
+    color: var(--gray-light);
+    -webkit-text-stroke: 0.1px var(--gray-light); 
+}
