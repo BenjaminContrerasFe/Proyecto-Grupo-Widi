@@ -10,10 +10,11 @@ header {
   padding: 15px 30px;
     }    
 .cont-header{
-   display: flex;
+  display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   position: relative;
+  padding: 15px 30px;
 }    
 header img {
   width: 150px;
