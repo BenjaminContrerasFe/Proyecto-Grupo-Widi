@@ -316,3 +316,11 @@ main{
     border-top-right-radius: 6rem ;
     box-shadow: 0 0 4px 1px var(--black-soft);
 }
+
+#Garantia #G1 img{
+    width: 100%;
+    margin: 5px;
+    border-radius: 1.3rem;
+    border: solid var(--gray-light) 1px;
+    box-shadow: 0 0 3px 1px var(--gray-light);
+}

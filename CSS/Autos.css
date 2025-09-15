@@ -20,17 +20,17 @@ header img {
 
 nav {
       display: flex;
-       justify-content: center; 
+      justify-content: center; 
       background: linear-gradient(to right, #000, #b8860b);
-       padding: 10px  0;; 
-       gap: 20px;
-       width: 103%;
+      padding: 10px  0;; 
+      gap: 20px;
+      width: 103%;
 }
 
 nav button{
     background: #444;
       color: white;
-     padding: 8px 16px;
+      padding: 8px 16px;
       border-radius: 20px;
       border: 2px solid #444;    
 }
@@ -73,7 +73,7 @@ nav a {
   font-weight: bold;
 }
 .galleria{
-display: flex; /* Esto las pone en fila horizontal */
+  display: flex; /* Esto las pone en fila horizontal */
   gap: 10px;     /* Espacio entre imágenes (opcional) */
   justify-content: center; /* Centrar todo (opcional) */
   align-items: center; /* Alinearlas verticalmente */
@@ -83,6 +83,12 @@ display: flex; /* Esto las pone en fila horizontal */
   max-width: 100%;        /* Nunca más ancho que su contenedor */          
   display: block;         
   border-radius: 8px;
+  border: 3px solid goldenrod;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.galleria img:hover {
+  transform: scale(1.05);
 }
 .boton-comparar {
   background-color: #aaa;
