@@ -84,3 +84,7 @@ main {
     border-radius: 12px;
     box-shadow: 5px 4px 15px 0px rgba(207, 187, 187, 0.735);
 }
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+}
