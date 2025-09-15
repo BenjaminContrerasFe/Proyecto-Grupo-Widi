@@ -380,3 +380,9 @@ main{
     box-shadow: var(--gray-light) 0 0 3px 1px;
     color: var(--black-soft);
 }
+
+#FC P{
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+}
