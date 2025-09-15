@@ -74,3 +74,13 @@ nav a {
 .menu a:hover {
     color: #e0a800;
 }
+
+main { 
+    color: #111;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 5px 4px 15px 0px rgba(207, 187, 187, 0.735);
+}
