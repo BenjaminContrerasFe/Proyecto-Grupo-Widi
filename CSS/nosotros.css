@@ -258,3 +258,9 @@ main{
     font-size: 18px;
     color: var(--black-soft);
 }
+
+#V2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
