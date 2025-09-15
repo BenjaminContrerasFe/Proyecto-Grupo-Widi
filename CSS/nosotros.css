@@ -223,3 +223,16 @@ main{
     font-size: 15px;
     background: radial-gradient(var(--gray-dark), var(--black-soft)90%);
 }
+
+#Num p{
+    font-size: 15px;
+    background: linear-gradient(90deg, var(--silver-primary), #fff, var(--silver-primary)); 
+    animation: animacion 5s infinite linear; 
+    background-size: 200%;
+    margin: 0;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
