@@ -19,3 +19,8 @@ body {
     color: var(--gray-light);
     line-height: 1.6;
 }
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
