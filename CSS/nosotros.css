@@ -15,6 +15,12 @@ body{
     --gray-light: #e1e1e1;
 }
 
+.logo{
+    height: 100px;
+    border-radius: 1.2rem;
+    border: solid var(--silver-primary) 3px;
+}
+
 a{
     color:var(--gray-medium);
     text-decoration: none;
