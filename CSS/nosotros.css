@@ -183,3 +183,18 @@ main{
     color:var(--silver-primary) ;
     font-size: 25px;
 }
+
+#Fondo ul #Excelencia::before {
+    content: "✔";
+    margin-right: 8px;
+}
+
+#Fondo ul #Confianza::before {
+    content: "⛨";
+    margin-right: 8px;
+}
+
+#Fondo ul #Pasion::before {
+    content: "❤︎";
+    margin-right: 8px;
+}
