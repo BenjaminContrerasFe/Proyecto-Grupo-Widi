@@ -164,7 +164,7 @@ input[type="text"]:focus,input[type="email"]:focus,select:focus {
     border: 2px solid gold;
     outline: none;
 }
-/* RADIO Y CHECKBOX - alineado horizontal */
+
 .generos label,.notify label {
     display: inline-block;
     margin-right: 20px;
@@ -176,6 +176,21 @@ input[type="text"]:focus,input[type="email"]:focus,select:focus {
     vertical-align: middle;
 }
 
+#enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(131, 130, 125);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#enviar:hover {
+    background-color: gold;
+}
 
 
 
