@@ -87,6 +87,11 @@ nav a {
   justify-content: space-between;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    
+.autito:hover {
+  transform: translateY(-10px) scale(1.05); 
+ 
+}
     .contenido {
       display: grid;
       grid-template-columns: 300px 300px 300px ;
