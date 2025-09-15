@@ -264,3 +264,12 @@ main{
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.C{
+    background: linear-gradient(180deg, var( --gray-light), var(--gray-medium) 300px);
+    padding: 5px;
+    border: solid var(--black-soft) 2px;
+    border-radius: 1.2rem;
+    -webkit-text-stroke: 0.7px var(--silver-primary); 
+    transition: transform 0.3s;
+}
