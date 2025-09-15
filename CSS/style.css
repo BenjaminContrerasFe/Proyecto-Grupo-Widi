@@ -13,3 +13,14 @@ body {
   background-position: center;  /* centra la imagen */
   background-repeat: no-repeat;
 }
+
+.Marca {
+  display: flex;
+  align-items: center; /* centra texto e imagen verticalmente */
+  gap: 10px; /* espacio entre texto e imagen */
+}
+
+.Marca .logo img {
+  height: 40px;
+  border-radius: 10px;
+}
