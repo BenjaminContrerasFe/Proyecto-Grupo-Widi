@@ -300,3 +300,7 @@ main{
 .texto p{
     font-size: 18px;
 }
+
+.C:hover {
+    transform: translateY(-5px);
+}
