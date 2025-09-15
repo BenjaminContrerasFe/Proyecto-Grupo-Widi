@@ -63,7 +63,7 @@ body {
   margin-bottom: 30px;
 }
 
-.Presentacion .btn {
+.Presentacion .boton {
   background: #ff9800;
   color: white;
   padding: 12px 25px;
@@ -73,7 +73,7 @@ body {
   transition: 0.3s;
 }
 
-.Presentacion .btn:hover {
+.Presentacion .boton:hover {
   background: #e68900;
 }
 
