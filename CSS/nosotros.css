@@ -386,3 +386,9 @@ main{
     text-align: center;
     font-size: 1.1rem;
 }
+
+#FC #Botones button{
+    background-color: var(--black-soft);
+    border: solid 1px var(--black-soft);
+    border-radius: 0.2rem;
+}
