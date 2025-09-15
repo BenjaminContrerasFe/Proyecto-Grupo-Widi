@@ -243,3 +243,18 @@ main{
     text-align: center;
     padding: 10px 10% 10px;
 }
+
+#V1{
+    justify-items: center;
+    align-items: center;
+}
+
+#V1 h2{
+    font-size: 40px;
+    color: var(--black-soft);
+}
+
+#V1 div p{
+    font-size: 18px;
+    color: var(--black-soft);
+}
