@@ -207,3 +207,9 @@ main{
 #Quienes-somos .Sombra{
     box-shadow:0px 0px 10px 5px var(--black-soft);
 }
+
+#Numeros{
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
