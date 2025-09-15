@@ -24,3 +24,24 @@ body {
   height: 40px;
   border-radius: 10px;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #000000, #494949);
+  box-shadow: 0 5px 10px rgba(255, 196, 0, 0.461);
+  color: white;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
