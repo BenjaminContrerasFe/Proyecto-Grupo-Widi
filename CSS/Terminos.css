@@ -46,3 +46,10 @@ main {
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
+.caja1 h2,
+.caja2 h2,
+.caja3 h2 {
+    color: var(--gold-light);
+    margin-bottom: 15px;
+    text-align: center;
+}
