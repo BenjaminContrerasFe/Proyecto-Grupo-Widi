@@ -150,3 +150,7 @@ main{
 #Intro div{
     color: var(--gray-medium);
 }
+
+#Intro div p{
+    font-size: 20px;
+}
