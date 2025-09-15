@@ -126,3 +126,16 @@ main{
     background: linear-gradient(180deg,var(--gray-light), var(--gray-medium), var(--gray-light));
     background-position: center; 
 }
+
+#Intro{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    height: 500px;
+    margin: 0;
+    padding: 30px 60px 80px 60px;
+    background-image: url("../img/Nosotros/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
