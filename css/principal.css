@@ -64,7 +64,7 @@ header h1 {
 .nav-menu li { padding: 10px 16px; border-bottom: 1px solid rgba(255,255,255,0.03); }
 .nav-menu li:last-child { border-bottom: none; }
 .nav-menu a { color: #fff; text-decoration: none; font-weight: 700; display:block; }
-#menu-toggle:checked ~ .dropdown {
+#menu-toggle:checked ~ .nav-menu {
   display: block;
   animation: fadeIn 180ms ease;
 }
