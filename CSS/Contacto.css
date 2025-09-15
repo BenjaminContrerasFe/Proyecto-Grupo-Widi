@@ -26,3 +26,6 @@ header {
       position: relative;
       padding-bottom: 0px;
 }
+header img {
+      height: 300px;
+}
