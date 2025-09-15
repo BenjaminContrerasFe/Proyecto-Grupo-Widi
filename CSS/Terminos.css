@@ -36,3 +36,13 @@ main {
 .titulo p {
     color: var(--gray-medium);
 }
+.caja1,
+.caja2,
+.caja3,
+.caja4 {
+    background: var(--gray-dark);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
