@@ -19,3 +19,11 @@ a{
     color:var(--gray-medium);
     text-decoration: none;
 }
+
+header{
+    margin: 0;
+    padding: 1px;
+    top: 0;
+    background:fixed radial-gradient(100% 100% at 0 0, var(--black-primary) ,var(--gray-dark));
+    color: var(--gray-medium);
+}
