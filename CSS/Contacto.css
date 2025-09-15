@@ -88,3 +88,13 @@ main {
     text-align: center;
     margin-bottom: 25px;
 }
+.titulo h2 {
+    font-size: 32px;
+    color: #0d1b2a;
+    margin-bottom: 10px;
+}
+
+.titulo p {
+    font-size: 16px;
+    color: #555;
+}
