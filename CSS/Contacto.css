@@ -143,4 +143,11 @@ fieldset {
     border: none;
     padding: 0;
 }
+/* LABELS */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
 
