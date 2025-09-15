@@ -163,3 +163,9 @@ main{
     justify-content: center;
     text-align: center;
 }
+
+#Esencia #Fondo{
+    padding: 5px;
+    width: max(600px,80%);
+    font-size: 20px;
+}
