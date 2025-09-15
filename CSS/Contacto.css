@@ -57,4 +57,9 @@ nav a {
       color: white;
       font-weight: bold;
 }
-
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
