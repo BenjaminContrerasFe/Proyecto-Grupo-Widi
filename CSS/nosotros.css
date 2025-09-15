@@ -363,3 +363,11 @@ main{
 #B1 button a{
     color: var(--black-soft);
 }
+
+#Compra{
+    background:local radial-gradient(100% 100%, var(--silver-primary), var(--black-soft),var(--silver-primary));
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
