@@ -144,3 +144,7 @@ main{
     text-decoration: underline ; 
     text-decoration-color:  var(--silver-primary);
 }
+
+#Intro div{
+    color: var(--gray-medium);
+}
