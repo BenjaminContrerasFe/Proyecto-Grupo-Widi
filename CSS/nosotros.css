@@ -154,3 +154,12 @@ main{
 #Intro div p{
     font-size: 20px;
 }
+
+#Esencia{
+    color: var(--black-soft);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
