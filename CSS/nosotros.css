@@ -198,3 +198,8 @@ main{
     content: "❤︎";
     margin-right: 8px;
 }
+
+#Fondo ul li p{
+    font-size: 15px;
+    color: var(--black-primary);
+}
