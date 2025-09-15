@@ -37,4 +37,10 @@ nav {
       gap: 20px;
       width: 103%;
 }
-
+nav button{
+    background: #444;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 2px solid #444;    
+}
