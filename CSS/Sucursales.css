@@ -30,3 +30,8 @@ main h1 {
     color: var(--gold-light);
     margin-bottom: 10px;
 }
+main p {
+    text-align: center;
+    color: var(--gray-medium);
+    margin-bottom: 30px;
+}
