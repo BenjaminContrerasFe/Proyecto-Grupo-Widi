@@ -12,6 +12,7 @@ body {
   background-size: cover;       /* hace que la imagen cubra toda la pantalla */
   background-position: center;  /* centra la imagen */
   background-repeat: no-repeat;
+  padding-bottom: 60px;
 }
 
 .Marca {
@@ -25,7 +26,7 @@ body {
   border-radius: 10px;
 }
 
-.navbar {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,14 +36,14 @@ body {
   color: white;
 }
 
-.navbar nav a {
+.nav nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.navbar nav a:hover {
+.nav nav a:hover {
   text-decoration: underline;
 }
 
@@ -114,5 +115,8 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
-  margin-top: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
