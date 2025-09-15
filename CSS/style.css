@@ -49,7 +49,7 @@ body {
 
 .Presentacion {
   background: url("fondo-concesionaria.jpg") no-repeat center center/cover;
-  color: white;
+  color: black;
   text-align: center;
   padding: 120px 20px;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 footer {
-  background: #0d47a1;
+  background: #000000;
   color: white;
   text-align: center;
   padding: 15px;
