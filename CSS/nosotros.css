@@ -359,3 +359,7 @@ main{
     padding: 5px;
     border-radius: 0.4rem;
 }
+
+#B1 button a{
+    color: var(--black-soft);
+}
