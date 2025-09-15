@@ -324,3 +324,18 @@ main{
     border: solid var(--gray-light) 1px;
     box-shadow: 0 0 3px 1px var(--gray-light);
 }
+
+#G2{
+    padding: 20px;
+    margin: 20px;
+}
+
+#G2 h2{
+    font-size: 35px;
+    color: var(--gray-light);
+}
+
+#G2 p{
+    font-size: 20px;
+    color: var(--gray-light);
+}
