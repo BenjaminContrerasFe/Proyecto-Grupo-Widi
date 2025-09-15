@@ -171,6 +171,11 @@ input[type="text"]:focus,input[type="email"]:focus,select:focus {
     font-weight: normal;
     vertical-align: middle;
 }
+.generos input[type="radio"],.notify input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
 
 
 
