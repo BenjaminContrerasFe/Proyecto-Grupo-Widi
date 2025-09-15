@@ -106,9 +106,15 @@ body {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.5s ease;
+}
+
+.cajitas:hover{
+    transform: scale(1.05);
 }
 
 .cajitas img {
+  height: 180px;
   width: 100%;
   border-radius: 8px;
   margin-bottom: 15px;
