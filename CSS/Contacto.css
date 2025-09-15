@@ -29,3 +29,12 @@ header {
 header img {
       height: 300px;
 }
+nav {
+      display: flex;
+      justify-content: center; 
+      background: linear-gradient(to right, #000, #b8860b);
+      padding: 10px  0;; 
+      gap: 20px;
+      width: 103%;
+}
+
