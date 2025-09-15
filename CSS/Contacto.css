@@ -109,3 +109,10 @@ main {
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.188);
 }
+.content img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    object-fit: cover; /* Cover <------ la imagen se recorta para llenar el lugar dnd va la imagen.*/
+    border: 2px solid #0d1b2a;
+}
