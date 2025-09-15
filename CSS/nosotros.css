@@ -213,3 +213,13 @@ main{
     display: flex;
     justify-content: center;
 }
+
+#Num{
+    padding: 20px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    font-size: 15px;
+    background: radial-gradient(var(--gray-dark), var(--black-soft)90%);
+}
