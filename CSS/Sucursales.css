@@ -52,3 +52,12 @@ main p {
     border-radius: 15px;
     margin-bottom: 15px;
 }
+.cajaA h3,
+.cajaB h3,
+.cajaC h3,
+.cajaD h3,
+.cajaD h4,
+.cajaD h5 {
+    color: var(--gold-light);
+    margin-bottom: 8px;
+}
