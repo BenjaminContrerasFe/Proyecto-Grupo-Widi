@@ -352,3 +352,10 @@ main{
     justify-content: center;
     align-items: center;
 }
+
+#B1 button{
+    background-color: var(--gold-light);
+    border: solid 2px var(--silver-primary);
+    padding: 5px;
+    border-radius: 0.4rem;
+}
