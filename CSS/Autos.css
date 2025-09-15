@@ -83,6 +83,12 @@ display: flex; /* Esto las pone en fila horizontal */
   max-width: 100%;        /* Nunca más ancho que su contenedor */          
   display: block;         
   border-radius: 8px;
+  border: 3px solid goldenrod;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.galleria img:hover {
+  transform: scale(1.05);
 }
 .boton-comparar {
   background-color: #aaa;
