@@ -55,12 +55,25 @@ nav a {
 .intro{
     display: flex;
     text-align: center;
-    font-family: serif;
+    font-family:'Times New Roman', Times, serif;
     justify-content: center;
       gap: 20px;
       font-size: 35px;  
       padding: 100px;
+
+        background: linear-gradient(270deg,  #dadada, #5f420b, #aaadaf);
+  background-size: 800% 800%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moverColores 10s ease infinite;
+
 }
+@keyframes moverColores {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .intro p{
   padding-top: 10px;
   
