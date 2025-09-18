@@ -1,0 +1,11 @@
+Model Information:
+* title:	2016 Ferrari 488 GTB
+* source:	https://sketchfab.com/3d-models/2016-ferrari-488-gtb-929feda77330442c892c334522d6ec10
+* author:	Ddiaz Design (https://sketchfab.com/ddiaz-design)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "2016 Ferrari 488 GTB" (https://sketchfab.com/3d-models/2016-ferrari-488-gtb-929feda77330442c892c334522d6ec10) by Ddiaz Design (https://sketchfab.com/ddiaz-design) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
