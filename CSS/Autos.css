@@ -109,7 +109,7 @@ nav a {
   color: black;
 }
 .model_3d model-viewer{
-  background-color: white;
+  background-color: #2b2b2b;
   display: block;         
   border-radius: 8px;
   border: 3px solid goldenrod;
