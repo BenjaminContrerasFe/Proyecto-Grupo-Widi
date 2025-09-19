@@ -81,7 +81,7 @@ nav a {
 }
 .galleria img {
   margin: 0 -5% 0 -5%;
-  max-width: 700px;
+  max-width:auto;
   width: auto;        /* Nunca más ancho que su contenedor */          
   display: block;         
   border-radius: 8px;
