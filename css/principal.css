@@ -75,12 +75,11 @@ header h1 {
   to   { opacity: 1; transform: translateY(0); }
 }
 .deco {
-    display: flex;
     margin-left: -30px;
       background: linear-gradient(to right, #000, #b8860b);
       padding: 10px  0; 
       gap: 20px;
-        width: 1585px;
+        width: 204.1vh;
         margin-bottom: -15px;
     }
 
