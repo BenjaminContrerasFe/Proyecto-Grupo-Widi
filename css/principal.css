@@ -124,13 +124,14 @@ header h1 {
       text-align: center;
   
     }
-    
-    @property --angle {
+
+    @property --bordexd {
   syntax: "<angle>";
   inherits: false;
   initial-value: 0deg;
 }
     .autito {
+      position: relative;
       background: #333;
       border-radius: 12px;
       overflow: hidden;
@@ -144,6 +145,7 @@ header h1 {
   justify-content: space-between;
    transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     
 .autito:hover {
   transform: translateY(-10px) scale(1.05);
