@@ -12,8 +12,17 @@ body {
       font-family: Arial, sans-serif;
       background: var(--color-fondo);
       color: var(--color-texto);
-       transition: background 0.3s, color 0.3s;
+      transition: background 0.3s, color 0.3s;
     }
+    
+    body.tema-claro {
+  --color-fondo: #f2f2f2;
+  --color-texto: #111;
+  --color-header: linear-gradient(to bottom, #fff, #ddd);
+  --color-nav: #eee;
+  --color-tarjeta: #fff;
+  --color-borde-tarjeta: #aaa;
+}
 header {
       background: var(--color-header);
   padding: 15px 30px;
