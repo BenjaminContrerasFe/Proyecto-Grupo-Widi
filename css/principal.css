@@ -159,6 +159,10 @@ header h1 {
   animation: spin 4s linear infinite;
   z-index: 0;
 }
+.autito * {
+  position: relative;
+  z-index: 1;
+}
 
 
     
