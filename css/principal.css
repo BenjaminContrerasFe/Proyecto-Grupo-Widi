@@ -1,3 +1,11 @@
+:root {
+  --color-fondo: #181717;
+  --color-texto: #fff;
+  --color-header: linear-gradient(to bottom, #000, #222);
+  --color-nav: #272626;
+  --color-tarjeta: #333;
+  --color-borde-tarjeta: #504d4d;
+}
 body {
      margin: 0;
       font-family: Arial, sans-serif;
@@ -151,7 +159,7 @@ header h1 {
   inset: 0; 
   border-radius: inherit;
   padding: 3px;
-  background: conic-gradient(from var(--bordexd), #ff0000, #00ffea, #ff0000);
+  background: conic-gradient(from var(--bordexd), #0641e4, #00ffea, #0641e4);
   -webkit-mask: linear-gradient(#000 0 0) content-box, 
                  linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
