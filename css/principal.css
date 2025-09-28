@@ -103,7 +103,7 @@ header h1 {
     }
 
 .introduccion{
-    background-image: url(../img/fondo-lambo.jpg);
+    background-image: url(../img/principal/fondo-lambo.jpg);
       background-repeat: no-repeat;
       background-position: 100%;
       background-size: cover;
