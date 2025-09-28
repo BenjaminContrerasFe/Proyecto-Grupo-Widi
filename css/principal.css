@@ -95,10 +95,10 @@ header h1 {
 }
 .deco {
     margin-left: -30px;
-      background: linear-gradient(to right, #000, #b8860b);
+      background: linear-gradient(to right, #000000, #11b1ce);
       padding: 10px  0; 
       gap: 20px;
-        width: 204.1vh;
+        width: 103.95%;
         margin-bottom: -15px;
     }
 
