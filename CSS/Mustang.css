@@ -8,3 +8,16 @@ body{
     background: #5b5c86;
     margin: 0;  
 }
+
+.Marca {
+    font-family: 'Audi type';
+    width: 100%;
+    display: flex;
+    flex-direction: column;    /* cambia a columna para poner el texto debajo */
+    align-items: center;       /* centra horizontalmente */
+    justify-content: center;   /* centra verticalmente dentro del contenedor */
+    background: #0a008f;
+    padding: 20px 0;
+    margin: 0;
+    box-sizing: border-box;
+}
