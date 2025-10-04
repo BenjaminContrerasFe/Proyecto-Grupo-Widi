@@ -24,4 +24,8 @@ body{
     margin: 0 0 10px 0; /* espacio debajo de la imagen */
 }
 
-
+.Marca h2 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
