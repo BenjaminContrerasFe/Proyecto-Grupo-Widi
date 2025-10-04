@@ -19,4 +19,9 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+.Marca img {
+    height: 200px;
+    margin: 0 0 10px 0; /* espacio debajo de la imagen */
+}
+
 
