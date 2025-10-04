@@ -21,7 +21,9 @@ body{
     box-sizing: border-box;
 }
 .Marca img {
-    max-height: 100%;
+    width: 35%;
+    max-height: 70%;
+    min-height: 50%;
     margin: 0 0 10px 0; /* espacio debajo de la imagen */
 }
 
