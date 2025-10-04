@@ -76,28 +76,42 @@ header h1 {
 }
 
 
-#division{
-      display: flex;
-      justify-content: left;
-      height: 100%;
-      width: 100%;
+#division {
+  display: flex;             /* Pone lado a lado la imagen y la info */
+  align-items: stretch;      /* Hace que ambas tengan la misma altura */
+  gap: 20px;                 /* Espacio entre imagen e info */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.info-auto{
-      background-color: #2a2a2a;
-      padding: 18.5px;
-      border-radius: 5px;
-      color: #eee;
-      height: 100%;
-      width: 100%;
+/* Imagen principal */
+#Principal img {
+  max-width: 900px;
+  margin-left: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* Ajusta la imagen sin deformarla */
+  border-radius: 10px;
+}
+
+/* Caja gris con la info */
+.info-auto {
+  flex: 1;                   /* Ocupa el mismo alto que la imagen */
+  background: #333;          /* Gris oscuro */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;    /* Ordena su contenido en columna */
+  justify-content: space-between;
 }
 .info-auto h2{
-      font-size: 28px;
+      font-size: 50px;
       font-weight: bold;
       margin-bottom: 10px;
 }
-.info-auto p {
-  font-size: 18px;
+.info-auto li {
+  font-size: 20px;
   margin: 5px 0;
   font-weight: bold;
 }
@@ -110,7 +124,7 @@ header h1 {
 }
 .galleria img {
   margin: 0 -5% 0 -5%;
-  max-width:auto;
+  max-width:500px;
   width: auto;        /* Nunca más ancho que su contenedor */          
   display: block;         
   border-radius: 8px;
