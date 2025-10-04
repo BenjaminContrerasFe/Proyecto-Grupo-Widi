@@ -5,3 +5,7 @@ body {
         color: #fff;
 
     }
+header {
+      background: linear-gradient(to bottom, #000, #222);
+  padding: 15px 30px;
+    }    
