@@ -12,7 +12,8 @@ body{
 .Marca {
     font-family: 'Ferro Rosso';
     width: 100%;              /* ocupa el ancho total de la ventana */
-    display: flex;             /* para alinear logo y texto */
+    display: flex;
+    flex-direction: column;
     align-items: center;       /* centra verticalmente */
     justify-content: center;   /* centra horizontalmente ambos */
     background: #a90101;       /* mismo color de fondo */
@@ -23,7 +24,6 @@ body{
 
 .Marca img {
     height: 200px;
-    margin-right: 20px;
 }
 
 .Marca h2 {

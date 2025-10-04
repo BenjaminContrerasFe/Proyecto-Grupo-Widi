@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    background: #949595;
+    background: #7b7d7d;
     margin: 0;  
 }
+
 .Marca {
     font-family: 'Audi type';
     width: 100%;
@@ -14,7 +15,7 @@ body{
     flex-direction: column;    /* cambia a columna para poner el texto debajo */
     align-items: center;       /* centra horizontalmente */
     justify-content: center;   /* centra verticalmente dentro del contenedor */
-    background: #54565a;
+    background: #393a3b;
     padding: 20px 0;
     margin: 0;
     box-sizing: border-box;
