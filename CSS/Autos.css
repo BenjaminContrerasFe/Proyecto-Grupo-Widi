@@ -92,6 +92,11 @@ header h1 {
   width: 400%;
   animation: slide 20s infinite alternate ease-in-out;
 }
+.galleria li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
 
 
 
