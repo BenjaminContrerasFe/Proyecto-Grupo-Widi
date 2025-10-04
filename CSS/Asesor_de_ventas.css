@@ -117,3 +117,27 @@ header img {
     color: #e0f7fa;
 }
 
+
+.estadisticas {
+    display: flex;
+    gap: 40px;
+}
+
+.estadisticas div {
+    text-align: center;
+    background: #0d47a1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+.estadisticas h3 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00e5ff;
+}
+
+.estadisticas p {
+    margin: 5px 0 0;
+    color: #e0f7fa;
+}
