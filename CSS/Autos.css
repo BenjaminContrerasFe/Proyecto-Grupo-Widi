@@ -86,9 +86,21 @@ header h1 {
   margin: 5px 0;
   font-weight: bold;
 }
-.galleria img{
-    width: 100%;
+.galleria ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
 }
+.galleria li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+.galleria img{
+  width: 100%;
+}
+
 
 .boton-comparar {
   background-color: #aaa;
