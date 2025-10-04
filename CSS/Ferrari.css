@@ -1,0 +1,15 @@
+body{
+    background: #a90101;
+}
+
+.logo img{
+    height: 200px;
+    position: relative;
+    left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+#Principal img{
+    max-width: 100%;
+}
+
