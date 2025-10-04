@@ -93,8 +93,6 @@ header h1 {
   font-weight: bold;
 }
 .galleria{
-  top: 20px;
-  background-color: #222;
   display: flex; /* Esto las pone en fila horizontal */
   flex-wrap: wrap;
   gap: 10px;     /* Espacio entre imágenes (opcional) */

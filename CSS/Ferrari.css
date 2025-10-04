@@ -2,12 +2,22 @@ body{
     background: #a90101;
 }
 
-.logo img{
-    height: 200px;
-    position: relative;
-    left: 100px;
-    align-items: center;
-    justify-content: center;
+.logo {
+  display: flex;
+  align-items: center;  /* Centra verticalmente */
+  gap: 20px;            /* Espacio entre logo y texto */
+  position: relative;
+  left: 100px;
+}
+
+.logo img {
+  height: 200px;
+}
+
+.logo h2 {
+  color: white;
+  font-size: 32px;
+  margin: 0;            /* Elimina margen por defecto del h2 */
 }
 #Principal img{
     max-width: 100%;
