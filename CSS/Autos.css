@@ -1,5 +1,5 @@
 body {
-     margin: 0;
+      margin: 0;
       font-family: Arial, sans-serif;
       background: #111;
       color: #fff;
@@ -92,27 +92,14 @@ header h1 {
   margin: 5px 0;
   font-weight: bold;
 }
-.galleria{
-  display: flex; /* Esto las pone en fila horizontal */
-  flex-wrap: wrap;
-  gap: 10px;     /* Espacio entre imágenes (opcional) */
+.galleria img{
+  display:flex;
   justify-content: center; /* Centrar todo (opcional) */
   align-items: center; /* Alinearlas verticalmente */
 }
-.galleria img {
-  margin: 0 20px 0 -5%;
-  max-width:500px;
-  width: auto;        /* Nunca más ancho que su contenedor */          
-  display: block;         
-  border-radius: 8px;
-  border: 3px solid goldenrod;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
 
-.galleria img:hover {
-  transform: scale(1.05);
-}
+
+
 .boton-comparar {
   background-color: #aaa;
   color: white;
