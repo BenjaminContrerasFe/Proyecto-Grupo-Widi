@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
     background: #ff0000;
+     margin: 0;  
 }
 
 .Marca {
-  width: 100vw;              /* ocupa el ancho total de la ventana */
+  width: 100%;              /* ocupa el ancho total de la ventana */
   display: flex;             /* para alinear logo y texto */
   align-items: center;       /* centra verticalmente */
   justify-content: center;   /* centra horizontalmente ambos */
