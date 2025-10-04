@@ -6,6 +6,14 @@ body {
 
     }
 header {
-      background: linear-gradient(to bottom, #000, #222);
-  padding: 15px 30px;
+    background: linear-gradient(to bottom, #000, #222);
+    padding: 15px 30px;
     }    
+.cont-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 15px 30px;
+  z-index: 10;
+}    
