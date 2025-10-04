@@ -107,3 +107,13 @@ header img {
     font-style: italic;
 }
 
+.info {
+    max-width: 500px;
+}
+
+.bio {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #e0f7fa;
+}
+
