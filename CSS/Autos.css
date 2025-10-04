@@ -77,14 +77,14 @@ header h1 {
 
 
 #division {
-  display: flex;             /* Pone lado a lado la imagen y la info */
-  align-items: stretch;      /* Hace que ambas tengan la misma altura */
-  gap: 20px;                 /* Espacio entre imagen e info */
+  display: flex;           
+  align-items: stretch;     
+  gap: 20px;                
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-/* Imagen principal */
+
 #Principal img {
   max-width: 900px;
   margin-left: 20px;
