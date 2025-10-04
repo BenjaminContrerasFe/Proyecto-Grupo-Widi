@@ -4,21 +4,19 @@
     box-sizing: border-box;
 }
 body{
-    background: #cdd0d0;
+    background: #949595;
     margin: 0;  
 }
 .Marca {
     font-family: 'Audi type';
-    width: 100%;              /* ocupa el ancho total de la ventana */
-    display: flex;             /* para alinear logo y texto */
-    align-items: center;       /* centra verticalmente */
-    justify-content: center;   /* centra horizontalmente ambos */
-    background: #99a1ac;       /* mismo color de fondo */
-    padding: 20px 0;           /* un poco de espacio arriba/abajo */
-    margin: 0;                 /* elimina márgenes que puedan reducir ancho */
-    box-sizing: border-box;    /* asegura que padding no afecte el ancho */
+    width: 100%;
+    display: flex;
+    flex-direction: column;    /* cambia a columna para poner el texto debajo */
+    align-items: center;       /* centra horizontalmente */
+    justify-content: center;   /* centra verticalmente dentro del contenedor */
+    background: #54565a;
+    padding: 20px 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.Marca img {
-    height: 200px;
-    margin-right: 20px;
-}
+
