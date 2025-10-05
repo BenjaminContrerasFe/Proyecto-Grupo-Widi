@@ -2,13 +2,11 @@ function validarFormulario() {
     const correo = document.querySelector('input[type="text"]').value.trim();
     const password = document.querySelector('input[type="password"]').value.trim();
 
-    // Validar campos vacíos
     if (correo === "" || password === "") {
         alert("Por favor completa todos los campos.");
         return;
     }
 
-    // Validar formato básico de email
     const regexCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!regexCorreo.test(correo)) {
         alert("Ingresa un correo electrónico válido.");
