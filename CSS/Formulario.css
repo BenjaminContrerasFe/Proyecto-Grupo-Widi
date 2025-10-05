@@ -98,12 +98,12 @@
     }
 
     form button { 
-        background: #34A853;
+        background: #4285F4; 
         transition: 0.5s;
      }
 
     form button:hover{
-        background: #1c5c2d;
+        background: #0362fb;
     }
 
     form input {
