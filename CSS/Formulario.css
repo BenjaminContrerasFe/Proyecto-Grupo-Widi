@@ -123,14 +123,12 @@
     .social a {
         text-decoration: none;
         padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 50px;
     }
 
 .btn-home {
-  position: fixed;   /* siempre visible en la pantalla */
-  top: 20px;         /* separación desde arriba */
-  left: 20px;        /* separación desde la izquierda */
+  position: fixed;   
+  top: 20px;         
+  left: 20px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -146,3 +144,29 @@
   .btn-home:hover {
     background: #555; /* cambia el color de fondo */
   }
+
+.neon {
+  color: rgb(127, 188, 245);
+  text-shadow: 
+    0 0 3px rgb(127, 188, 245),
+    0 0 6px rgb(127, 188, 245);
+  animation: parpadeo 1.5s infinite alternate;
+}
+
+@keyframes parpadeo {
+  from {
+    text-shadow: 
+      0 0 2px rgb(127, 188, 245),
+      0 0 4px rgb(127, 188, 245);
+  }
+  to {
+    text-shadow:
+      0 0 3px rgb(127, 188, 245)
+      0 0 6px rgb(127, 188, 245),
+  }
+}
+
+.imagen {
+  width: 30px;
+  height: 30px;
+}
