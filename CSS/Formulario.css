@@ -1,131 +1,128 @@
-body{
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    flex-direction: column;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-
-    background: url("img/FormularioIMG/itS7H4.jpg") no-repeat center center/cover;
-    background-size: 100% 100%;
+  :root {
+    --silver-primary: #595959;
+    --gold-light: #FFD700;
+    --gold-dark: #B8860B;
+    --black-primary: #000000;
+    --black-soft: #1a1a1a;
+    --gray-dark: #343A40;
+    --gray-medium: #9b9e9f;
+    --gray-light: #e1e1e1;
 }
 
-main{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    gap: 20px;
-}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url("../img/FormularioIMG/fondo-de-pantalla-negro.png") no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
 
-.logo {
-    position: absolute;
-    top: 20px;       /* Con esto lo pego al borde superior */
-    left: 50%;       /* Esto lo centro horizontalmente */
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .container {
+        width: 800px;
+        height: 400px;
+        background: #fff;
+        box-shadow: 0 5px 15px rgb(127, 188, 245);
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+    }
 
-.logo img{
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    border: #000 solid 5px;
-}
+    .welcome {
+        position: absolute;
+        inset: 0; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: opacity 0.5s ease;
+        z-index: 2;
+        color: white;
+    }
 
-.logo::before,
-.logo::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 120px;
-    height: 3px;
-    background: linear-gradient(to right, gold, #fff8b3, gold);
-}
+    .container.active .welcome {
+        opacity: 0;
+        pointer-events: none; /* Ya no se puede tocar */
+    }
 
-.logo::before { left: -140px; }
-.logo::after  { right: -140px; }
+    /* --- CONTENIDO dividido en 2 columnas --- */
+    .content {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        opacity: 0;
+        transform: scale(0.95);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+        z-index: 1;
+    }
 
-.decoracion {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    color: gold;
-}
+    .container.active .content {
+        opacity: 1;
+        transform: scale(1);
+    }
 
-.decoracion span{
-    background: linear-gradient(90deg,gold,#fff,gold);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 3s infinite linear;
-    background-size: 200%;
-}
+    .social-area, .form-area {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
 
-@keyframes shine {
-    0% {background-position: 200% center;}
-    100% {background-position: -200% center;}
-}
+    .social-area {
+        background: black;
+        color: white;
+    }
 
-.formulario{
-    width: 240px;
-    padding: 22px;
-    border-radius: 18px;
-    background: linear-gradient(#d9d9d9, #ffffff);
-    box-shadow: 0 8px 24px rgba(0,0,0,.18);
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    border: goldenrod solid 5px;
-}
+    .form-area {
+        background: #c0c0c0;
+    }
 
-.campo{
-    padding:10px 12px;
-    border:1px solid #000;
-    border-radius:10px;
-    text-align:center;
-    outline:none;
-    background:#fff;
-}
+    button {
+        padding: 10px 20px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.botones{
-    display:flex;
-    gap:12px;
-    margin-top:4px;
-}
+    .welcome button { 
+        background: #4285F4; 
+        transition: 0.5s;
+    }
 
-.boton{
-    flex:1;
-    padding:10px;
-    border:1px solid #000;
-    border-radius:10px;
-    background:#fff;
-    cursor:pointer;
-    transition: background-color 1s, transform 1s;
-}
+    .welcome button:hover {
+        background: #0362fb; 
+    }
 
-.boton:hover{
-    background:#f2f2f2;
-    transform: scale(1.05);
-}
+    form button { 
+        background: #34A853;
+        transition: 0.5s;
+     }
 
-.boton-casa {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #333;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    z-index: 1000; /* asegura que quede por encima de otros elementos */
-}
+    form button:hover{
+        background: #1c5c2d;
+    }
 
-.boton-casa:hover {
-    background: #555;
-}
+    form input {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .social {
+        display: flex;
+        gap: 10px;
+    }
+
+    .social a {
+        text-decoration: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+    }
