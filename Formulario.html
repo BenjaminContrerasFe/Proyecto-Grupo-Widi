@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Formulario Estilo Google</title>
+<title>Formulario</title>
 <link rel="stylesheet" href="CSS\formulario.css">
 </head>
 <body>
@@ -33,18 +33,14 @@
             <form>
                 <input type="text" placeholder="Correo" required>
                 <input type="password" placeholder="Contraseña" required>
-                <button>Entrar</button>
+                <button type="button" onclick="validarFormulario()">Entrar</button>
             </form>
         </div>
     </div>
 
 </div>
 
-<script>
-function next() {
-    document.getElementById("box").classList.add("active");
-}
-</script>
+<script src="JS/formulario.js"></script>
 
 </body>
 </html>
