@@ -1,0 +1,11 @@
+Model Information:
+* title:	Nissan GTR R35
+* source:	https://sketchfab.com/3d-models/nissan-gtr-r35-51c912a8310c4e00a82ad7673d84228a
+* author:	Ciasny (https://sketchfab.com/Ciasny)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Nissan GTR R35" (https://sketchfab.com/3d-models/nissan-gtr-r35-51c912a8310c4e00a82ad7673d84228a) by Ciasny (https://sketchfab.com/Ciasny) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
