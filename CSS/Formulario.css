@@ -19,7 +19,7 @@
         height: 100vh;
     }
 
-    .container {
+    .contenedor {
         width: 800px;
         height: 400px;
         background: #fff;
@@ -29,7 +29,7 @@
         position: relative;
     }
 
-    .welcome {
+    .bienvenido {
         position: absolute;
         inset: 0; 
         display: flex;
@@ -42,13 +42,12 @@
         color: white;
     }
 
-    .container.active .welcome {
+    .contenedor.active .bienvenido {
         opacity: 0;
-        pointer-events: none; /* Ya no se puede tocar */
+        pointer-events: none;
     }
 
-    /* --- CONTENIDO dividido en 2 columnas --- */
-    .content {
+    .contenido {
         position: absolute;
         inset: 0;
         display: flex;
@@ -58,7 +57,7 @@
         z-index: 1;
     }
 
-    .container.active .content {
+    .contenedor.active .contenido {
         opacity: 1;
         transform: scale(1);
     }
@@ -89,12 +88,12 @@
         cursor: pointer;
     }
 
-    .welcome button { 
+    .bienvenido button { 
         background: #4285F4; 
         transition: 0.5s;
     }
 
-    .welcome button:hover {
+    .bienvenido button:hover {
         background: #0362fb; 
     }
 
