@@ -231,6 +231,10 @@ a{
 }   
 
 @media (max-width: 768px) {
-  
+  .cont-header {
+    
+    align-items: center;
+    gap: 10px;
+  }
 }
 
