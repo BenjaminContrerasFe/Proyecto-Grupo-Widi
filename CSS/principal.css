@@ -223,3 +223,9 @@ a{
       color: var(--color-texto);
       font-size: 25px;
     }
+
+ footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}   
