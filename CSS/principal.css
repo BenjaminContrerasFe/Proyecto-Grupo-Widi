@@ -108,7 +108,7 @@ header h1 {
     font-family:'Times New Roman', Times, serif;
     justify-content: center;
       gap: 20px;
-      font-size: clamp(18px, 5vw 35px);  
+      font-size: 35px;  
       padding: 100px;
 
         background: linear-gradient(270deg,  #dadada,#b8860b, #bdbdbd);
@@ -230,7 +230,7 @@ a{
   font-size: 14px;
 }   
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .cont-header {
     align-items: center;
     gap: 10px;
@@ -270,6 +270,46 @@ a{
   }
   .autito{
     width: 70%;
+    height: 90%;
+  }
+}
+@media (min-width: 800px) and (max-width: 1023px) {
+    .cont-header {
+    align-items: center;
+    gap: 10px;
+  }
+  .menu-label {
+    font-size: 16px;
+  }
+  .intro{
+    font-size: 30px;
+    padding: 30px;
+  }
+  .contenido {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+   .autito{
+    width:80%;
+    height: 90%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1290px) {
+   .cont-header {
+    align-items: center;
+    gap: 15px;
+  }
+  .menu-label {
+    font-size: 25px;
+  }
+  .intro{
+    font-size: 30px;
+    padding: 30px;
+  }
+  .contenido {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+   .autito{
+    width: 80%;
     height: 90%;
   }
 }
