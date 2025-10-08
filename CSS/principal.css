@@ -31,9 +31,17 @@ header {
   width: 100%;
       background: var(--color-header);
   padding: 20px 0;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
    z-index: 1000;
-    }    
+    }   
+    header.shrink {
+  padding: 5px 0;
+}
+
+header.shrink h1 {
+  font-size: 30px;
+   transition: all 1s ease;
+} 
 .cont-header{
   display: flex;
   align-items: center;
@@ -47,7 +55,15 @@ header img {
     height: auto;
   border: 3px solid var(--color-borde-tarjeta);
   border-radius: 10px;
+  transition: all 1s ease;
     }
+ header.shrink img {
+  width: 100px;
+    height: auto;
+  border: 3px solid var(--color-borde-tarjeta);
+  border-radius: 10px;
+    }   
+
 header h1 {
   color: var(--color-texto);
   font-size: 32px;
@@ -115,11 +131,12 @@ header h1 {
 
 
 .introduccion{
+
     background-image: url(../img/principal/fondo-lambo.jpg);
       background-repeat: no-repeat;
       background-position: 100%;
       background-size: cover;
-      padding-bottom: 10%;
+      padding-bottom: 15%;
 }
 .intro{
     display: flex;
@@ -144,7 +161,7 @@ header h1 {
 }
 
 .intro p{
-  padding-top: 10px;
+  padding-top: 20%;
   
 }
  main {
