@@ -97,7 +97,7 @@ header h1 {
   align-items: center;
   gap: 8px;
   color: var(--color-texto);
-  background: var(--color-fondo);
+
   padding: 8px 12px;
   border-radius: 8px;
   z-index: 20;
@@ -128,8 +128,6 @@ header h1 {
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
-
 .introduccion{
 
     background-image: url(../img/principal/fondo-lambo.jpg);
@@ -158,6 +156,17 @@ header h1 {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+.btn-home {
+  color: var(--color-texto);
+  cursor: pointer;
+  margin: 5%;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.btn-home:hover {
+  transform: scale(1.2);
 }
 
 .intro p{
