@@ -98,25 +98,71 @@ body {
   padding: 5px 15px;
 }
 
-.caja {
+.caja{
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  perspective: 1000px;
+  z-index: 1;
 }
 
-.cajitas {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 10px;
+.cajitas::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
+}
+.cajitas{
+  position: relative;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.5s ease;
+  padding: 2em;
+  color: white;
+  border-radius: 20px;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease;
+  z-index: 1;
 }
 
-.cajitas:hover{
-    transform: scale(1.05);
+.cajitas::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(var(--angle,135deg), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 2;
+  transition: background 0.2s ease;
+}
+
+.brillo{
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at center, rgba(0, 255, 200, 0.2), trabsparent 80%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0;
+  transition: top 0.1s, left 0.1s, opacity 0.3s ease;
+  z-index: 0;
+}
+
+.cajitas:hover .brillo{
+  opacity: 1;
 }
 
 .cajitas img {
