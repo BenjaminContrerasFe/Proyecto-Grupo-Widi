@@ -23,3 +23,19 @@ function irPrincipal() {
 function next() {
     document.getElementById("box").classList.add("active");
 }
+
+document.querySelectorAll('.Flotante input').forEach(input => {
+  const contenedor = input.parentElement;
+
+  // Cuando el input tiene foco
+  input.addEventListener('focus', () => {
+    contenedor.classList.add('active');
+  });
+
+  // Cuando pierde el foco
+  input.addEventListener('blur', () => {
+    if (input.value === '') {
+      contenedor.classList.remove('active');
+    }
+  });
+});

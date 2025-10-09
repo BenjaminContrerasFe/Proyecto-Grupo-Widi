@@ -31,8 +31,14 @@
         <div class="form-area">
             <h2>Iniciar Sesión</h2>
             <form>
-                <input type="text" placeholder="Correo" required>
-                <input type="password" placeholder="Contraseña" required>
+                <div class="Flotante">
+                    <input type="text" id="Correo" required>
+                    <label for="Correo">Correo</label>
+                </div>
+                    <div class="Flotante">
+                    <input type="password" id="Contra" required>
+                <label for="Contra">Contraseña</label>
+                </div>
                 <button type="button" onclick="validarFormulario()">Entrar</button>
             </form>
         </div>

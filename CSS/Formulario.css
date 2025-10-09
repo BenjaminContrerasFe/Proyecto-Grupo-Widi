@@ -74,10 +74,13 @@
     .social-area {
         background: black;
         color: white;
+        border-right: white 1px solid;
     }
 
     .form-area {
-        background: #c0c0c0;
+        background: black;
+        color: white;
+        border-left: white 1px solid;
     }
 
     button {
@@ -168,4 +171,51 @@
 .imagen {
   width: 30px;
   height: 30px;
+}
+
+.Flotante {
+  position: relative;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+.Flotante input {
+  width: 100%;
+  background: #fff; /* fondo blanco */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #111;
+  padding: 14px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Flotante input:focus {
+  border-color: rgb(127, 188, 245);
+  box-shadow: 0 0 5px rgba(127, 188, 245, 0.5);
+}
+
+.Flotante label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #777;
+  font-size: 16px;
+  pointer-events: none;
+  padding: 0 5px;
+  transition: 0.25s ease;
+}
+
+.Flotante.active label {
+  top: 0;
+  left: 10px;
+  font-size: 15px;
+  color: rgb(127, 188, 245);
+  transform: translateY(-50%);
+  text-shadow: 
+    0 0 3px rgb(127, 188, 245),
+    0 0 6px rgb(127, 188, 245);
+  animation: parpadeo 1.5s infinite alternate;
 }
