@@ -118,11 +118,9 @@ header h1 {
 }
 
 #Principal img {
-  border: 5px solid white;      /* marco blanco */
-  border-radius: 10px;          /* esquinas redondeadas (opcional) */
-  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* sombra suave opcional */
-  width: 80%;                  /* ajusta el tamaño de la imagen */
-  height: auto;                /* mantiene proporción */
+  border: 5px solid rgb(0, 0, 0);     
+  border-radius: 10px;          /* esquinas redondeadas */
+  width: 80%;                  /* ajusta el tamaño de la imagen */               
   display: block;              /* elimina espacios blancos alrededor */
 }
 
