@@ -111,8 +111,17 @@ header h1 {
 
 
 
+#Principal {
+  display: flex;               /* hace que el contenido (la imagen) se alinee fácilmente */
+  justify-content: center;     /* centra horizontalmente */
+  align-items: center;         /* centra verticalmente (si el contenedor tiene altura definida) */
+  background: #000;            /* opcional: color de fondo */           
+}
+
 #Principal img {
-  width: 100%;
+  width: 80%;                  /* ajusta el tamaño de la imagen */
+  height: auto;                /* mantiene proporción */
+  display: block;              /* elimina espacios blancos alrededor */
 }
 
 
