@@ -43,6 +43,12 @@ main #Perfiles {
     border-radius: 3.5rem;
 }
 
+h2 {
+    font-size: var(--size-h2);
+    text-align: center;
+    background-color: var(--color-negro);
+}
+
 .img img {
     height: 280px;
     border-radius: 30px;
