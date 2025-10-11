@@ -28,13 +28,13 @@ body {
 /* comienza header */
 header {
   position: fixed;
-   top: 0;
+  top: 0;
   left: 0;
   width: 100%;
       background: var(--color-header);
   padding: 20px 0;
   transition: all 1s ease;
-   z-index: 1000;
+  z-index: 1000;
     }   
     header.shrink {
   padding: 5px 0;
