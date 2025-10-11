@@ -24,6 +24,7 @@ body {
   --color-tarjeta: #fff;
   --color-borde-tarjeta: #aaa;
 }
+/* comienza header */
 header {
   position: fixed;
    top: 0;
@@ -128,35 +129,6 @@ header h1 {
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.introduccion{
-
-    background-image: url(../img/principal/fondo-lambo.jpg);
-      background-repeat: no-repeat;
-      background-position: 100%;
-      background-size: cover;
-      padding-bottom: 15%;
-}
-.intro{
-    display: flex;
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    justify-content: center;
-      gap: 20px;
-      font-size: 35px;  
-      padding: 100px;
-
-        background: linear-gradient(270deg,  #dadada,#b8860b, #bdbdbd);
-  background-size: 800% 800%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: moverColores 10s ease infinite;
-
-}
-@keyframes moverColores {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
 .btn-home {
   color: var(--color-texto);
   cursor: pointer;
@@ -167,6 +139,10 @@ header h1 {
 .btn-home:hover {
   transform: scale(1.2);
 }
+/* fin del header */
+
+
+
 
 .intro p{
   padding-top: 20%;
