@@ -159,7 +159,7 @@ header h1 {
 #Principal img {
   border: 5px solid rgb(0, 0, 0);     
   border-radius: 10px;          /* esquinas redondeadas */
-  width: 80%;                  /* ajusta el tamaño de la imagen */               
+  width: 90%;                  /* ajusta el tamaño de la imagen */               
   display: block;              /* elimina espacios blancos alrededor */
 }
 
