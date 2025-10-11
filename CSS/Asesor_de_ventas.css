@@ -136,6 +136,19 @@ h3 {
     border-color: var(--bronce-light);
 }
 
+@media (max-width: 1260px){
+    main #Perfiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+}
+}
+
+@media (max-width: 600px){
+    .img img{
+        display: none;
+    }
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
