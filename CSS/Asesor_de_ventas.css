@@ -72,6 +72,18 @@ h2 {
     border-radius: 50%;
 }
 
+.n1 {
+    color: var(--gold-light);
+}
+
+.n2 {
+    color: var(--gray-light);
+}
+
+.n3 {
+    color: var(--bronce-light);
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
