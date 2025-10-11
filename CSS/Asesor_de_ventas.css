@@ -43,6 +43,12 @@ main #Perfiles {
     border-radius: 3.5rem;
 }
 
+.img img {
+    height: 280px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
