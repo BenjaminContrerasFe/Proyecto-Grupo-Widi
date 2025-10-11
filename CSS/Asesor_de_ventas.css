@@ -30,6 +30,19 @@ main #Perfiles {
     background: radial-gradient(circle at center, var(--black-soft), var(--color-negro), black);
 }
 
+.Perfil {
+    background-color: var(--black-soft);
+    padding: 50px;
+    margin: 20px;
+    color: var(--azul-aqua);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: var(--heigt-perfil);
+    border-radius: 3.5rem;
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
