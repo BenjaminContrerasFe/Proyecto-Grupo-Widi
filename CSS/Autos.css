@@ -114,11 +114,13 @@ header h1 {
 #Principal {
   display: flex;               /* hace que el contenido (la imagen) se alinee fácilmente */
   justify-content: center;     /* centra horizontalmente */
-  align-items: center;         /* centra verticalmente (si el contenedor tiene altura definida) */
-  background: #000;            /* opcional: color de fondo */           
+  align-items: center;         /* centra verticalmente (si el contenedor tiene altura definida) */           /* opcional: color de fondo */           
 }
 
 #Principal img {
+  border: 5px solid white;      /* marco blanco */
+  border-radius: 10px;          /* esquinas redondeadas (opcional) */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* sombra suave opcional */
   width: 80%;                  /* ajusta el tamaño de la imagen */
   height: auto;                /* mantiene proporción */
   display: block;              /* elimina espacios blancos alrededor */
@@ -145,7 +147,7 @@ header h1 {
 
 
 .galleria {
-  height: 100%;
+  height: 50%;
   margin: 50px auto 0;
   overflow: hidden;
 }
