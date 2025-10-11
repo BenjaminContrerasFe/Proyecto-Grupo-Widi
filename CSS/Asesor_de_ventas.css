@@ -55,6 +55,13 @@ h2 {
     border: 2px solid transparent;
 }
 
+.Estadisticas {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2px;
+    margin: 0;
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
