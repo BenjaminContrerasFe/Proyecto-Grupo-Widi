@@ -1,10 +1,27 @@
 body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #111;
-        color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    }
+:root {
+    --color-blanco: #fff;
+    --color-negro: #111111;
+    --color-gris: #c0c0c0;
+    --gold-light: #eecf1e;
+    --gold-mi: #eeb31e;
+    --silver-primary: #c0c0c0;
+    --silver-glow: #c0c0c0;
+    --bronce-light: #cd7f32;
+    --bronce-dark: #9a5620;
+    --black-soft: #1a1a1a;
+    --gray-light: #bbbaba;
+    --gray-dark: #343A40;
+    --azul-aqua: #00b3ff;
+    --heigt-perfil: 300px;
+    --size-h2: clamp(2rem, -0.3rem + 4.3vw, 3rem);
+    --size-p: clamp(1rem, -1rem + 2vw, 2rem);
+}
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
