@@ -94,6 +94,20 @@ h3 {
     bottom: 20px;
 }
 
+.Cat1 {
+    box-shadow: var(--gold-light) 0 0 6px 2px, var(--gold-mi) 0 0 15px 4px;
+}
+
+.Cat1 h2 {
+    color: var(--gold-light);
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.Cat1 .img img {
+    border-color: var(--gold-light);
+}
+
 header {
     background: linear-gradient(to bottom, #000, #222);
     padding: 15px 30px;
