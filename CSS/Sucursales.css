@@ -162,3 +162,13 @@ button:hover {
     background: var(--gold-dark);
     color: #fff;
 }
+footer {
+  text-align: center;
+  background: #1a1a1a;
+  color: var(--gray-dark);
+  padding: 30px;
+  font-size: 15px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
