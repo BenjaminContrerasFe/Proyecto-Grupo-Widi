@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background: #393a3b;;
+    background: #000000;;
     margin: 0;  
 }
 
@@ -15,7 +15,7 @@ body{
     flex-direction: column;    /* cambia a columna para poner el texto debajo */
     align-items: center;       /* centra horizontalmente */
     justify-content: center;   /* centra verticalmente dentro del contenedor */
-    background: #393a3b;
+    background: #000000;
     padding: 20px 0;
     margin-top: 175px;
     box-sizing: border-box;
