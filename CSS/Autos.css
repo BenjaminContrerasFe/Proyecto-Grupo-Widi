@@ -215,23 +215,19 @@ header h1 {
   margin: 60px auto;
   max-width: 80%;
   border-radius: 20px;
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(249, 249, 249, 0.3);
   text-align: center;
   font-family: "Arial", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.historia-auto:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
 }
 
 .historia-auto h2 {
   font-size: 2.3rem;
   margin-bottom: 15px;
-  color: #ff2d2d; /* Rojo Ferrari */
+  color: #ffffff; /* Rojo Ferrari */
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: 0 0 8px rgba(255, 45, 45, 0.7);
+  text-shadow: 0 0 8px rgba(179, 169, 169, 0.7);
 }
 
 .historia-auto p {
@@ -249,17 +245,17 @@ header h1 {
   margin: 60px auto;
   max-width: 80%;
   border-radius: 20px;
-  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(138, 125, 125, 0.3);
   text-align: center;
   font-family: "Arial", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .info-auto li {
   margin-bottom: 15px;
-  color: #ff2d2d; /* Rojo Ferrari */
+  color: #dfdfdf; /* Rojo Ferrari */
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-shadow: 0 0 8px rgba(255, 45, 45, 0.7);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
   font-size: 1.1rem;
   line-height: 1.8;
   color: #ddd;
