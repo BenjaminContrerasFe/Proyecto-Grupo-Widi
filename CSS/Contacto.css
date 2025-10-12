@@ -310,3 +310,63 @@ select:focus {
 #enviar:hover {
     background-color: gold;
 }
+.foot {
+  background-color: var(--color-fot);
+  border-top: 3px solid #4fc7f7; /* Línea xd */
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  color: #4fc7f7;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.foot-column {
+   display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.foot-column h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.foot-column a {
+  display: block;
+  color: #d4d4d4;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.foot-column a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+.foot-bottom a {
+  color: #4fc7f7;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.foot-bottom a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom p {
+  margin: 10px 0;
+}
