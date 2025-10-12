@@ -33,3 +33,10 @@ header {
 header.hidden {
   top: -150px;
 }
+.cont-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px 20px;
+}
