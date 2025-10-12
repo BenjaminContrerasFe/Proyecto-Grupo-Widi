@@ -47,13 +47,19 @@ header img {
   border-radius: 10px;
 }
 header h1 {
-  color: var(--gold-light);
+  color: var(--color-texto);
   font-size: 32px;
   font-family: serif;
   margin: 0;
-  position: absolute;
+  position: static;
   left: 50%;
-  transform: translateX(-50%);
+  transform: none;
+   z-index: 5;
+ background: linear-gradient(90deg, #595959, #fff, #595959);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: moverDegradado 3s infinite linear ;
 }
 #menu-toggle { display: none; 
 }
