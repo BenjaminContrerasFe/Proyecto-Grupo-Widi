@@ -12,3 +12,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--black-soft);
+  color: var(--gray-light);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+}
