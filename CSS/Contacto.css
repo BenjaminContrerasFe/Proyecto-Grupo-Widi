@@ -276,8 +276,8 @@ select {
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus {
-    border-color: gold;
-    border: 2px solid gold;
+    border-color: #4fc7f7;
+    border: 2px solid #4fc7f7;
     outline: none;
 }
 
@@ -308,7 +308,7 @@ select:focus {
 }
 
 #enviar:hover {
-    background-color: gold;
+    background-color: #4fc7f7;
 }
 .foot {
   background-color: var(--color-fot);
