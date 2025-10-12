@@ -302,7 +302,7 @@ header h1 {
 }
 
 .boton-comparar:hover {
-  background-color: goldenrod;
+  background-color: rgb(32, 218, 218);
   color: black;
 }
 
