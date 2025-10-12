@@ -254,7 +254,18 @@ header h1 {
   font-family: "Arial", sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.info-auto li {
+  margin-bottom: 15px;
+  color: #ff2d2d; /* Rojo Ferrari */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 45, 45, 0.7);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+  text-align: justify;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
 
 
 
