@@ -16,15 +16,16 @@ body {
   --color-borde-tarjeta: #504d4d;
   --color-fot: #0e0e0e;
 }
+
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--color-fondo);
-      color: var(--color-texto);
-      transition: background 0.3s, color 0.3s;
-    }
-    
-    body.tema-claro {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.tema-claro {
   --color-fondo: #f2f2f2;
   --color-texto: #111;
   --color-header: linear-gradient(to bottom, #fff, #999999);
@@ -33,46 +34,51 @@ body {
   --color-tarjeta: #fff;
   --color-borde-tarjeta: #aaa;
 }
+
 /* comienza header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-      background: var(--color-header);
+  background: var(--color-header);
   padding: 20px 0;
   transition: all 1s ease;
   z-index: 1000;
-    }   
-    header.shrink {
+}
+
+header.shrink {
   padding: 5px 0;
 }
 
 header.shrink h1 {
   font-size: 30px;
-   transition: all 1s ease;
-} 
-.cont-header{
+  transition: all 1s ease;
+}
+
+.cont-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   flex-wrap: wrap;
   z-index: 10;
-}    
+}
+
 header img {
   width: 150px;
-    height: auto;
+  height: auto;
   border: 3px solid var(--color-borde-tarjeta);
   border-radius: 10px;
   transition: all 1s ease;
-    }
- header.shrink img {
+}
+
+header.shrink img {
   width: 100px;
-    height: auto;
+  height: auto;
   border: 3px solid var(--color-borde-tarjeta);
   border-radius: 10px;
-    }   
+}
 
 header h1 {
   color: var(--color-texto);
@@ -82,25 +88,28 @@ header h1 {
   position: static;
   left: 50%;
   transform: none;
-   z-index: 5;
- background: linear-gradient(90deg, #595959, #fff, #595959);
+  z-index: 5;
+  background: linear-gradient(90deg, #595959, #fff, #595959);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: moverDegradado 3s infinite linear ;
+  animation: moverDegradado 3s infinite linear;
 }
 
 @keyframes moverDegradado {
   0% {
     background-position: 200%;
   }
+
   100% {
     background-position: -200%;
   }
 }
+
 #menu-toggle {
   display: none;
 }
+
 .menu-label {
   cursor: pointer;
   display: inline-flex;
@@ -111,6 +120,7 @@ header h1 {
   border-radius: 8px;
   z-index: 20;
 }
+
 .nav-menu {
   display: none;
   position: absolute;
@@ -120,24 +130,51 @@ header h1 {
   border-radius: 12px;
   padding: 8px 0;
   margin-top: -30px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
   width: 220px;
   z-index: 1000;
 }
-.nav-menu ul { list-style: none; margin: 0; padding: 0; }
-.nav-menu li { padding: 10px 16px; border-bottom: 1px solid var(--color-tarjeta); }
-.nav-menu li:last-child { border-bottom: none; }
-.nav-menu a { color: var(--color-texto); text-decoration: none; font-weight: 700; display:block; }
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--color-tarjeta);
+}
+
+.nav-menu li:last-child {
+  border-bottom: none;
+}
+
+.nav-menu a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: 700;
+  display: block;
+}
 
 
-#menu-toggle:checked ~ .nav-menu {
+#menu-toggle:checked~.nav-menu {
   display: block;
   animation: fadeIn 280ms ease;
 }
+
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
 .btn-home {
   color: var(--color-texto);
   cursor: pointer;
@@ -145,22 +182,31 @@ header h1 {
   padding: 5px;
   transition: transform 0.2s ease;
 }
+
 .btn-home:hover {
   transform: scale(1.2);
 }
+
 /* fin del header */
 
 #Principal {
-  display: flex;               /* hace que el contenido (la imagen) se alinee fácilmente */
-  justify-content: center;     /* centra horizontalmente */
-  align-items: center;         /* centra verticalmente (si el contenedor tiene altura definida) */           /* opcional: color de fondo */           
+  display: flex;
+  /* hace que el contenido (la imagen) se alinee fácilmente */
+  justify-content: center;
+  /* centra horizontalmente */
+  align-items: center;
+  /* centra verticalmente (si el contenedor tiene altura definida) */
+  /* opcional: color de fondo */
 }
 
 #Principal img {
-  border: 5px solid rgb(0, 0, 0);     
-  border-radius: 10px;          /* esquinas redondeadas */
-  width: 90%;                  /* ajusta el tamaño de la imagen */               
-  display: block;              /* elimina espacios blancos alrededor */
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  /* esquinas redondeadas */
+  width: 90%;
+  /* ajusta el tamaño de la imagen */
+  display: block;
+  /* elimina espacios blancos alrededor */
 }
 
 
@@ -271,4 +317,66 @@ header h1 {
   height: 500px;
   width: 100%;
   box-sizing: border-box;
+}
+
+.foot {
+  background-color: var(--color-fot);
+  border-top: 3px solid #4fc7f7;
+  /* Línea xd */
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  color: #4fc7f7;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.foot-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.foot-column h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.foot-column a {
+  display: block;
+  color: #d4d4d4;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.foot-column a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+.foot-bottom a {
+  color: #4fc7f7;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.foot-bottom a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom p {
+  margin: 10px 0;
 }
