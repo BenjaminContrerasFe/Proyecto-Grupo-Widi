@@ -24,6 +24,7 @@ body {
   --color-nav: #eee;
   --color-tarjeta: #fff;
   --color-borde-tarjeta: #aaa;
+  --color-fot: rgb(207, 207, 207);
 }
 /* comienza header */
 header {
