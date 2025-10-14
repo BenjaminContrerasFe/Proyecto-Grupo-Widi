@@ -193,13 +193,14 @@ header h1 {
 main{
     padding-top: 190px;
 }
+
 main #Perfiles {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35vw, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 40px;
-    background: radial-gradient(circle at center, #1a1a1a, #0d0d0d, #000);
-
+    background: radial-gradient(circle at center,var(--gray-dark), var(--black-soft), var(--color-negro));
 }
+
 
 .Perfil {
     background-color: var(--black-soft);
@@ -212,22 +213,21 @@ main #Perfiles {
     gap: 20px;
     height: var(--heigt-perfil);
     border-radius: 3.5rem;
+    border: var(--gray-light) 2px solid;
+    box-shadow: var(--color-gris) 0px 5px 5px 2px;
 }
 
 .img img {
     height: 280px;
     border-radius: 30px;
     border: 2px solid transparent;
+    border: var(--color-blanco) 2px solid;
 }
 
 h2 {
     font-size: var(--size-h2);
-    text-align: center;
-    background-color: #111111;
-}
-
-.p {
-    font-size: var(--size-p);
+    padding: 0;
+    margin: 0;
 }
 
 .Estadisticas {
@@ -235,6 +235,15 @@ h2 {
     justify-content: space-evenly;
     gap: 2px;
     margin: 0;
+}
+
+.Info {
+    background-color: #111111;
+    padding: 10px 15px 10px 10px;
+    border-radius: 10px 3rem 10px 10px;
+    margin-bottom: 20px;
+    border: solid 2px var(--color-gris);
+    color: white;
 }
 
 .n {
@@ -245,6 +254,7 @@ h2 {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    box-shadow: var(--gray-dark) 0 7px 2px 2px;
 }
 
 .n1 {
@@ -269,46 +279,28 @@ h3 {
     bottom: 20px;
 }
 
-.Cat1 {
-    box-shadow: var(--gold-light) 0 0 6px 2px, var(--gold-mi) 0 0 15px 4px;
+
+
+
+
+@media (max-width: 1260px) {
+    main #Perfiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        padding: 10px;
+    }
 }
 
-.Cat1 h2 {
-    color: var(--gold-light);
-    border-radius: 20px;
-    padding: 5px 10px;
+@media (max-width: 620px) {
+    .img img {
+        display: none;
+    }
 }
 
-.Cat1 .img img {
-    border-color: var(--gold-light);
-}
-
-.Cat2 {
-    box-shadow: var(--silver-glow) 0 0 6px 2px, var(--silver-primary) 0 0 15px 4px;
-}
-
-.Cat2 h2 {
-    color: var(--silver-glow);
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-
-.Cat2 .img img {
-    border-color: var(--silver-primary);
-}
-
-.Cat3 {
-    box-shadow: var(--bronce-light) 0 0 6px 2px, var(--bronce-dark) 0 0 15px 4px;
-}
-
-.Cat3 h2 {
-    color: var(--bronce-light);
-    border-radius: 20px;
-    padding: 5px 10px;
-}
-
-.Cat3 .img img {
-    border-color: var(--bronce-light);
+@media (min-width: 1860px) {
+    main #Perfiles {
+        grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+    }
 }
 
 
