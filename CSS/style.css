@@ -295,12 +295,24 @@ input[type="checkbox"]:checked::before {
   right: 10px;
 }
 .thumbnail .item .content .title {
-  font-weight: 500;
-}
-.thumbnail .item .content .description {
-  font-weight: 300;
+  font-weight: bold;
+  color: white;
 }
 
+.thumbnail .item .content .title1 {
+  font-weight: bold;
+  color: black;
+}
+
+.thumbnail .item .content .title2 {
+  font-weight: bold;
+  color: black;
+}
+
+.thumbnail .item .content .title3 {
+  font-weight: bold;
+  color: white;
+}
 .arrows {
   position: absolute;
   top: 80%;
