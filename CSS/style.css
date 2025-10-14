@@ -240,6 +240,9 @@ input[type="checkbox"]:checked::before {
 }
 .des {
   font-size: 15px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 5%;
 }
 .carousel .list .item .title,
 .carousel .list .item .topic {
