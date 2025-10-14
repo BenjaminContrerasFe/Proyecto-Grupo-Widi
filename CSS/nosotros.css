@@ -149,7 +149,7 @@ main {
     height: 500px;
     margin: 0;
     padding: 30px 60px 80px 60px;
-    background-image: url("fondo.jpg");
+    background-image: url("../img/Nosotros/fondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
