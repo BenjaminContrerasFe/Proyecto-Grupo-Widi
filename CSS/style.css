@@ -91,6 +91,8 @@ body.dark .main-content {
   transition: var(--transition);
   white-space: nowrap;
   overflow: hidden;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-item:hover,
