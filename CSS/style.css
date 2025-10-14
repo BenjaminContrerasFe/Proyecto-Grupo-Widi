@@ -599,27 +599,3 @@ img {
     right: 10%;
   }
 }
-
-@media screen and (max-width: 678px) {
-  .arrows {
-    bottom: 160px;
-    width: 80px;
-  }
-  .arrows button {
-    width: 30px;
-    height: 30px;
-    font-size: 18px;
-  }
-}
-
-.thumbnail .item {
-  width: 120px;
-  height: 180px;
-}
-
-@media screen and (max-width: 678px) {
-  .thumbnail .item {
-    width: 90px;
-    height: 140px;
-  }
-}
