@@ -1,48 +1,71 @@
-const cajitas = document.querySelectorAll('.cajitas');
+const sidebar = document.getElementById('sidebar');
+const toggleTheme = document.getElementById('theme-toggle');
+const collapseBtn = document.querySelector('.toggle-sidebar');
+const collapseIcon = document.getElementById('collapse-icon');
 
-cajitas.forEach(cajita => {
-  const brillo = cajita.querySelector('.brillo');
-
-  // Valores actuales y objetivo para rotación y posición de brillo
-  let currentX = 0, currentY = 0, targetX = 0, targetY = 0;
-  let currentRotateX = 0, currentRotateY = 0, targetRotateX = 0, targetRotateY = 0;
-  let currentAngle = 135, targetAngle = 135;
-
-  function animate() {
-    // Interpolación para suavizar (factor 0.1)
-    currentX += (targetX - currentX) * 0.1;
-    currentY += (targetY - currentY) * 0.1;
-    currentRotateX += (targetRotateX - currentRotateX) * 0.1;
-    currentRotateY += (targetRotateY - currentRotateY) * 0.1;
-    currentAngle += (targetAngle - currentAngle) * 0.1;
-
-    cajita.style.setProperty('--x', `${currentX}px`);
-    cajita.style.setProperty('--y', `${currentY}px`);
-    cajita.style.transform = `rotateX(${currentRotateX}deg) rotateY(${currentRotateY}deg)`;
-    cajita.style.setProperty('--angle', `${currentAngle}deg`);
-
-    requestAnimationFrame(animate);
-  }
-
-  animate(); // Iniciar animación continua
-
-  cajita.addEventListener('mousemove', (e) => {
-    const rect = cajita.getBoundingClientRect();
-    targetX = e.clientX - rect.left;
-    targetY = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    targetRotateY = ((targetY - centerY) / centerY) * 10;
-    targetRotateX = ((targetX - centerX) / centerX) * -10;
-    targetAngle = 135 + targetRotateX - targetRotateY;
-  });
-
-  cajita.addEventListener('mouseleave', () => {
-    targetX = 150; // mitad caja aprox.
-    targetY = 100;
-    targetRotateX = 0;
-    targetRotateY = 0;
-    targetAngle = 135;
-  });
+toggleTheme.addEventListener('change', () => {
+  sidebar.classList.toggle('dark');
+  document.body.classList.toggle('dark');
 });
+
+collapseBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('collapsed');
+  if(sidebar.classList.contains('collapsed')) {
+    collapseIcon.classList.remove('fa-angle-double-left');
+    collapseIcon.classList.add('fa-angle-double-right');
+  } else {
+    collapseIcon.classList.remove('fa-angle-double-right');
+    collapseIcon.classList.add('fa-angle-double-left');
+  }
+});
+let nextDom = document.getElementById("next");
+let prevDom = document.getElementById("prev");
+
+let carouselDom = document.querySelector(".carousel");
+let SliderDom = carouselDom.querySelector(".carousel .list");
+let thumbnailBorderDom = document.querySelector(".carousel .thumbnail");
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll(".item");
+let timeDom = document.querySelector(".carousel .time");
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function () {
+  showSlider("next");
+};
+
+prevDom.onclick = function () {
+  showSlider("prev");
+};
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+  next.click();
+}, timeAutoNext);
+function showSlider(type) {
+  let SliderItemsDom = SliderDom.querySelectorAll(".carousel .list .item");
+  let thumbnailItemsDom = document.querySelectorAll(
+    ".carousel .thumbnail .item"
+  );
+
+  if (type === "next") {
+    SliderDom.appendChild(SliderItemsDom[0]);
+    thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+    carouselDom.classList.add("next");
+  } else {
+    SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+    thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+    carouselDom.classList.add("prev");
+  }
+  clearTimeout(runTimeOut);
+  runTimeOut = setTimeout(() => {
+    carouselDom.classList.remove("next");
+    carouselDom.classList.remove("prev");
+  }, timeRunning);
+
+  clearTimeout(runNextAuto);
+  runNextAuto = setTimeout(() => {
+    next.click();
+  }, timeAutoNext);
+}
+;

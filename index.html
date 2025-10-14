@@ -1,54 +1,172 @@
 <!DOCTYPE html>
-<html lang="es-ar">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS\style.css">
-    <title>Pagina de inicio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <header class="nav">
-        <div class="Marca">
-            <div class="logo"><img src="img\IndexIMG\WhatsApp Image 2025-08-18 at 23.25.44.jpeg" alt="logo"></div>
-            <div class="logo"><p> Deutschland</p></div>
+
+<div class="sidebar" id="sidebar">
+  <div>
+    <div class="header">
+      <img src="img/principal/img-logo-fnegro.jpeg" alt="Logo">
+      <div class="info">
+        <strong>Deutschland</strong><br>
+        <small>Concesionaria</small>
+      </div>
+    </div>
+    <div class="menu">
+      <a href="hola.html" class="menu-item active"><i class="fas fa-home"></i><span>Inicio</span></a>
+      <div class="menu-item"><i class="fas fa-chart-bar"></i><span>Ingresos</span></div>
+      <div class="menu-item"><i class="fas fa-bell"></i><span>Notificaciones</span></div>
+      <div class="menu-item"><i class="fas fa-chart-line"></i><span>Analíticas</span></div>
+      <div class="menu-item"><i class="fas fa-heart"></i><span>Favoritos</span></div>
+      <div class="menu-item"><i class="fas fa-wallet"></i><span>Billetera</span></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="menu-item"><i class="fas fa-sign-out-alt"></i><span>Cerrar sesión</span></div>
+    <div class="toggle-theme">
+      <i class="fas fa-moon"></i><span>Modo Oscuro</span>
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+      </label>
+    </div>
+    <div class="toggle-sidebar">
+      <i class="fas fa-angle-double-left" id="collapse-icon"></i><span>Colapsar</span>
+    </div>
+  </div>
+</div>
+<div class="carousel">
+      <!-- list item -->
+      <div class="list">
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
+          <div class="content">
+            <div class="author">CALLMEREV</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">PHOTOGRAPH</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+              sequi, rem magnam nesciunt minima placeat, itaque eum neque
+              officiis unde, eaque optio ratione aliquid assumenda facere ab et
+              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
+              nisi reprehenderit tempora at laborum natus unde. Ut,
+              exercitationem eum aperiam illo illum laudantium?
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
         </div>
-        <nav>
-            <a href="Asesor de ventas.html">Nuestro asesor</a>
-            <a href="soporte.html">Servicios</a>
-            <a href="Contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <section class="Presentacion">
-    <h1>Bienvenido a Concesionaria Deutschland</h1>
-    <h5>Tu próximo auto te espera con nosotros</h5>
-    <a href="Principal.html" class="boton">Ver catálogo</a>
-    </section>
-    <section class="autos">
-        <h2>Autos destacados</h2>
-        <div class="caja">
-            <div class="cajitas">
-                <img src="img\IndexIMG\toyota-lanca-linha-2025-do-corolla.webp" alt="Auto 1">
-                <h3>Modelo Sport</h3>
-                <p>Potencia, velocidad y diseño moderno.</p>
-                <div class="brillo"></div>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/2018-Bugatti-Chiron-1.webp" />
+          <div class="content">
+            <div class="author">CALLMEREV</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">PHOTOGRAPH</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+              sequi, rem magnam nesciunt minima placeat, itaque eum neque
+              officiis unde, eaque optio ratione aliquid assumenda facere ab et
+              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
+              nisi reprehenderit tempora at laborum natus unde. Ut,
+              exercitationem eum aperiam illo illum laudantium?
             </div>
-            <div class="cajitas">
-                <img src="img\IndexIMG\3PoIo2s64_2000x1500__1.jpg" alt="Auto 2">
-                <h3>SUV Familiar</h3>
-                <p>Espacio, confort y seguridad para toda la familia.</p>
-                <div class="brillo"></div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
             </div>
-            <div class="cajitas">
-                <img src="img\IndexIMG\images.jpeg" alt="Auto 3">
-                <h3>Premium</h3>
-                <p>Elegancia, lujo y la mejor tecnología.</p>
-                <div class="brillo"></div>
-            </div>
+          </div>
         </div>
-        <footer>
-            <p>© 2025 Concesionaria Deutschland - Todos los derechos reservados</p>
-        </footer>
-    </section>
-    <script src="JS/Inicio.js"></script>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
+          <div class="content">
+            <div class="author">CALLMEREV</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">PHOTOGRAPH</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+              sequi, rem magnam nesciunt minima placeat, itaque eum neque
+              officiis unde, eaque optio ratione aliquid assumenda facere ab et
+              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
+              nisi reprehenderit tempora at laborum natus unde. Ut,
+              exercitationem eum aperiam illo illum laudantium?
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
+          <div class="content">
+            <div class="author">CALLMEREV</div>
+            <div class="title">DESIGN SLIDER</div>
+            <div class="topic">PHOTOGRAPH</div>
+            <div class="des">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+              sequi, rem magnam nesciunt minima placeat, itaque eum neque
+              officiis unde, eaque optio ratione aliquid assumenda facere ab et
+              quasi ducimus aut doloribus non numquam. Explicabo, laboriosam
+              nisi reprehenderit tempora at laborum natus unde. Ut,
+              exercitationem eum aperiam illo illum laudantium?
+            </div>
+            <div class="buttons">
+              <button>SEE MORE</button>
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- list thumnail -->
+      <div class="thumbnail">
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/2018-Bugatti-Chiron-1.webp" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/IndexIMG/IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
+          <div class="content">
+            <div class="title">Name Slider</div>
+            <div class="description">Description</div>
+          </div>
+        </div>
+      </div>
+      <!-- next prev -->
+
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- time running -->
+      <div class="time"></div>
+    </div>
+
+
+
+<script src="JS/Inicio.js"></script>
 </body>
 </html>
