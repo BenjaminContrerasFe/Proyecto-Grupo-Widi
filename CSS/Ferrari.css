@@ -5,8 +5,9 @@
 }
 
 body{
-    background: #ff0000;
-    margin: 0;  
+    background: #000000;
+      
+    color: white;
 }
 
 .Marca {
@@ -16,9 +17,9 @@ body{
     flex-direction: column;
     align-items: center;       /* centra verticalmente */
     justify-content: center;   /* centra horizontalmente ambos */
-    background: #a90101;       /* mismo color de fondo */
+    background: #000000;       /* mismo color de fondo */
     padding: 20px 0;           /* un poco de espacio arriba/abajo */
-    margin: 0;                 /* elimina márgenes que puedan reducir ancho */
+   margin-top: 185px;                 /* elimina márgenes que puedan reducir ancho */
     box-sizing: border-box;    /* asegura que padding no afecte el ancho */
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,104 +8,184 @@
     <link rel="stylesheet" href="css/Autos.css">
     <link rel="stylesheet" href="CSS/Audi-R8.css">
 </head>
+
 <body>
     <header>
         <div class="cont-header">
-            
-            <img class="logo" src="img/principal/img-logo-fnegro.jpeg" alt="Logo-empresa" height="300" width="300" title="Logo-empresa">
-        
-        <h1>DEUSCHLAND</h1>
-    
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-label">
-        <span class="menu-icon">☰</span>
-        <span class="menu-text">Menú</span>
-    </label>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="soporte.html">SOPORTE TÉCNICO</a></li>
-                <li><a href="Contacto.html">CONTACTO</a></li>
-                <li><a href="Asesor de ventas.html">VENTAS</a></li>
-                <li><a href="Sucursales.html">SUCURSALES</a></li>
-                <li><a href="Principal.html">VOLVER</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="deco">
 
-    </div>
+            <img class="logo" src="img/principal/img-logo-fnegro.jpeg" alt="Logo-empresa" height="300" width="300"
+                title="Logo-empresa">
+
+            <h1>DEUSCHLAND</h1>
+
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-label">
+                <span class="menu-icon">☰</span>
+                <span class="menu-text">Menú</span>
+                <a href="index.html" class="btn-home">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+                        <path d="M12 3l9 8h-3v10h-4V15H10v6H6V11H3l9-8z" />
+                    </svg>
+                </a>
+            </label>
+
+            <nav class="nav-menu">
+                <ul>
+                    <button id="boton-tema">🌙 Modo claro</button>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="soporte.html">SOPORTE TÉCNICO</a></li>
+                    <li><a href="Contacto.html">CONTACTO</a></li>
+                    <li><a href="Asesor de ventas.html">VENTAS</a></li>
+                    <li><a href="Sucursales.html">SUCURSALES</a></li>
+                    <li><a href="Principal.html">VOLVER</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
     </header>
     <main>
         <article id="Auto">
             <div class="Marca">
                 <img src="img/Logos/Audi_logo_PNG3.png" alt="Logo Audi">
             </div>
-                <div id="division">
-                    <div id="Principal" class="Img">
-                        <img src="img/Audi-R8/Vista-Principal.webp" alt="Img Principal">
-                    </div>
-                    <hr>
-                    <div class="info-auto">
+            <div id="division">
+                <div id="Principal" class="Img">
+                    <img src="img/Audi-R8/Vista-Principal.webp" alt="Img Principal">
+                </div>
+                <div class="info-auto">
+                    <div class="historia-auto">
                         <h2>Audi-R8</h2>
-                            <ul>
-                                <li>Motor:V10 atmosférico 5.2 L</li>
-                                <li>Potencia: 620 hp</li>
-                                <li>Aceleración: 0-100 km/h en 3.1 segundos </li>
-                                <li>Velocidad máxima: 330 km/h</li>
-                                <li>Transmisión:Automática de 7 marchas </li>
-                                <li>Tracción: Quattro (AWD)</li>
-                            </ul>
-                        <div class="precio">
-                            <h3>Precio: $160.000 USD</h3>
-                        </div> 
+                        <p>
+                            El Audi R8 es el lado racional de la locura. Detrás de su diseño elegante y minimalista late
+                            un motor V10 atmosférico de 5.2 litros que alcanza más de 600 caballos, compartido con el
+                            mismísimo Lamborghini Huracán. Es un superdeportivo alemán con corazón italiano, capaz de
+                            combinar precisión milimétrica con emoción pura.
+                            Su tracción quattro lo mantiene pegado al suelo incluso cuando la física dice que debería
+                            soltarse. Su interior es sobrio, tecnológico y ergonómico, diseñado para el conductor, no
+                            para el espectáculo. Pero basta un toque en el acelerador para que ese motor cobre vida y te
+                            recuerde que el R8 puede pasar de silencioso a salvaje en un parpadeo.
+                            Es el auto perfecto para quien quiere rendimiento sin renunciar a la elegancia, potencia sin
+                            perder el control. El Audi R8 no grita: susurra poder con una confianza que solo Alemania
+                            podría fabricar.
+                        </p>
+                    </div>
+                    <ul>
+                        <h2>DATOS TECNICOS</h2>
+                        <li>Potencia: 620 hp</li>
+                        <li>Aceleración: 0-100 km/h en 3.1 segundos </li>
+                        <li>Velocidad máxima: 330 km/h</li>
+                        <li>Transmisión:Automática de 7 marchas </li>
+                        <li>Tracción: Quattro (AWD)</li>
+                    </ul>
+                    <div class="precio">
+                        <h3>Precio: $160.000 USD</h3>
+                    </div>
                     <div class="comprar">
                         <button class="boton-comparar">COMPRAR</button>
                     </div>
                 </div>
-            </div> 
-                <hr>
-                <div class="galleria">
-                    <ul>
-                        <li>
-                            <div class="Img1">
-                                <img src="img/Audi-R8/Vista-Frontal.webp" alt="Img1">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Img2">
-                                <img src="img/Audi-R8/Vista-3-4.webp" alt="Img2">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Img3">
-                                <img src="img/Audi-R8/Vista-interior.webp" alt="Img3">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="Im4g">
-                                <img src="img/Audi-R8/Vista-atras.webp" alt="Img4">
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="galleria">
+                <ul>
+                    <li>
+                        <div class="Img1">
+                            <img src="img/Audi-R8/Vista-Frontal.webp" alt="Img1">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Img2">
+                            <img src="img/Audi-R8/Vista-3-4.webp" alt="Img2">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Img3">
+                            <img src="img/Audi-R8/Vista-interior.webp" alt="Img3">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="Im4g">
+                            <img src="img/Audi-R8/Vista-atras.webp" alt="Img4">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </article>
         <div class="model_3d">
             <h2>Modelo interactivo 3d</h2>
-            <model-viewer src="/Modelos_3D/Audi-R8/scene.gltf" camera-controls touch-action="pan-y"
-                shadow-intensity="2" shadow-softness="1"></model-viewer>
+            <model-viewer src="/Modelos_3D/Audi-R8/scene.gltf" camera-controls touch-action="pan-y" shadow-intensity="2"
+                shadow-softness="1"></model-viewer>
             <script type="module"
                 src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
         </div>
     </main>
+    <article class="foot">
+        <div class="foot-container">
+            <div class="foot-column">
+                <h4>Institucional</h4>
+                <a href="homepage.html">Homepage</a>
+                <a href="postventa.html">Postventa</a>
+                <a href="vw-group.html">Deushcland Argentina</a>
+                <a href="newsroom.html">Deushcland Newsroom</a>
+                <a href="codigo.html">Código de conducta</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+
+            <div class="foot-column">
+                <h4>Explorá Deushcland</h4>
+                <a href="app.html">App Deushcland</a>
+                <a href="bicicletas.html">Bicicletas</a>
+                <a href="innovacion.html">Innovación y tecnología</a>
+            </div>
+
+            <div class="foot-column">
+                <h4>Modelos</h4>
+                <a href="Gtr-35.html">Gtr-35</a>
+                <a href="Audi-R8.html">Audi-R8</a>
+                <a href="Lamborghini.html">Lamborghini</a>
+                <a href="Ferrari.html">Ferrari</a>
+                <a href="Mustang.html">Mustang</a>
+                <a href="Porsche.html">Porsche 911</a>
+            </div>
+
+            <div class="foot-column">
+                <h4>Redes Sociales</h4>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://www.youtube.com/watch?v=70fP1M8hZVA" target="_blank">YouTube</a>
+                <a href="https://tiktok.com" target="_blank">TikTok</a>
+            </div>
+        </div>
+
+        <div class="foot-bottom">
+            <p>
+                <a href="privacidad.html">Política de privacidad</a> |
+                <a href="terminos.html">Términos y condiciones</a> |
+                <a href="cookies.html">Política de cookies</a>
+            </p>
+            <p>© nashei</p>
+        </div>
+
+    </article>
     <footer>
-        <hr>
+
         <p>&copy; 2025 Deushcland. Todos los derechos reservados.</p>
         <p>Contacto: Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
-        <div class="redes-sociales">
+        <div>
             <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
             <a href="https://www.instagram.com/">Instagram</a>
         </div>
     </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            const header = document.querySelector("header");
+            if (window.scrollY > 50) {
+                header.classList.add("shrink");
+            } else {
+                header.classList.remove("shrink");
+            }
+        });
+    </script>
 </body>
+
 </html>
