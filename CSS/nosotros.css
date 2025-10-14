@@ -24,7 +24,7 @@ body {
     --heigt-perfil: 300px;
     --size-h2: clamp(1.8rem, -0.5rem + 3.5vw, 3rem);
     --size-h3: clamp(1.4rem, -0.6rem + 2.7vw, 3rem);
-    --size-p: clamp(1rem, -1rem + 2vw, 2rem);
+    --size-p: clamp(1.2rem, -1rem + 2vw, 2rem);
 }
 
 .logo {
@@ -155,10 +155,7 @@ main {
     background-repeat: no-repeat;
 }
 
-.h2 {
-    text-decoration: underline;
-    text-decoration-color: var(--color-negro);
-}
+
 
 #Intro div {
     color: var(--gray-medium);
@@ -166,6 +163,8 @@ main {
 
 #Intro div .h2 {
     font-size: var(--size-h2);
+    text-decoration: underline;
+    text-decoration-color: var(--color-gris--color-negro);
 }
 
 #Intro div p {
@@ -181,10 +180,18 @@ main {
     text-align: center;
 }
 
+
+
 #Esencia #Fondo {
     padding: 5px;
     width: max(600px, 80%);
-    font-size: var(--size-h3);
+    font-size: var(--size-p);
+}
+
+#Esencia .h2 {
+    text-decoration: underline;
+    text-decoration-color: var(--color-negro);
+    font-size: var(--size-h2);
 }
 
 #Fondo ul {
@@ -198,7 +205,7 @@ main {
 #Fondo ul li {
     margin: 0 10px 0 10px;
     color: var(--color-negro);
-    font-size:var(--size-h2);
+    font-size:var(--size-h3);
 }
 
 #Fondo ul #Excelencia::before {
@@ -217,7 +224,7 @@ main {
 }
 
 #Fondo ul li p {
-    font-size: var(--size-h3);
+    font-size: var(--size-p);
     color: var(--black-primary);
 }
 
