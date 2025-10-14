@@ -499,3 +499,8 @@ input[type="checkbox"]:checked::before {
     font-size: 30px;
   }
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
