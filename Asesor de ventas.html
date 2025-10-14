@@ -168,14 +168,87 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <p>&copy; 2025 Deushcland. Todos los derechos reservados.</p>
-            <p>Contacto: Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
-            <div>
-                <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
-                <a href="https://www.instagram.com/">Instagram</a>
+        <article class="foot">
+            <div class="foot-container">
+                <div class="foot-column">
+                    <h4>Institucional</h4>
+                    <a href="homepage.html">Homepage</a>
+                    <a href="postventa.html">Postventa</a>
+                    <a href="vw-group.html">Deushcland Argentina</a>
+                    <a href="newsroom.html">Deushcland Newsroom</a>
+                    <a href="codigo.html">Código de conducta</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+
+                <div class="foot-column">
+                    <h4>Explorá Deushcland</h4>
+                    <a href="app.html">App Deushcland</a>
+                    <a href="bicicletas.html">Bicicletas</a>
+                    <a href="innovacion.html">Innovación y tecnología</a>
+                </div>
+
+                <div class="foot-column">
+                    <h4>Modelos</h4>
+                    <a href="Gtr-35.html">Gtr-35</a>
+                    <a href="Audi-R8.html">Audi-R8</a>
+                    <a href="Lamborghini.html">Lamborghini</a>
+                    <a href="Ferrari.html">Ferrari</a>
+                    <a href="Mustang.html">Mustang</a>
+                    <a href="Porsche.html">Porsche 911</a>
+                </div>
+
+                <div class="foot-column">
+                    <h4>Redes Sociales</h4>
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com"
+                        target="_blank">Instagram</a>
+                    <a href="https://www.youtube.com/watch?v=70fP1M8hZVA"
+                        target="_blank">YouTube</a>
+                    <a href="https://tiktok.com" target="_blank">TikTok</a>
+                </div>
             </div>
+
+            <div class="foot-bottom">
+                <p>
+                    <a href="privacidad.html">Política de privacidad</a> |
+                    <a href="terminos.html">Términos y condiciones</a> |
+                    <a href="cookies.html">Política de cookies</a>
+                </p>
+                <p>© nashei</p>
+            </div>
+
+        </article>
+        <footer>
+
+            <p>&copy; 2025 Deushcland. Todos los derechos reservados.</p>
+            <p> Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
         </footer>
+        <script>
+
+        const botonTema = document.getElementById("boton-tema");
+        const body = document.body;
+
+        // evento q cambia al hacer clic
+        botonTema.addEventListener("click", () => {
+            body.classList.toggle("tema-claro"); // activa o desactiva el modo
+
+            //  cambia dependiendo el tema
+            if (body.classList.contains("tema-claro")) {
+                botonTema.textContent = "🌞 Modo oscuro";
+            } else {
+                botonTema.textContent = "🌙 Modo claro";
+            }
+        });
+//header
+            window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+    });
+    </script>
     </body>
 
 </html>
