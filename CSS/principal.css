@@ -85,7 +85,7 @@ header h1 {
   left: 50%;
   transform: none;
   z-index: 5;
-  background: linear-gradient(90deg, #595959, #fff, #595959);
+  background: linear-gradient(90deg, #c3c5c7, var(--celeste-fot), #595959);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -467,3 +467,5 @@ footer {
 .foot-bottom p {
   margin: 10px 0;
 }
+
+
