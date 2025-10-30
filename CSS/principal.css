@@ -185,10 +185,25 @@ header h1 {
 
 /* fin del header */
 
-.introduccion {
-  margin-top: 10%;
-  text-align: center;
-  background-color: var(--color-fondo);
+.intro {
+  position: relative;
+  height: 100vh;
+  background: url(../img/principal/intro1.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 60px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.intro h1 {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+
+.intro p {
+  font-size: 1.3em;
 }
 
 iframe {
