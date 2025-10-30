@@ -213,7 +213,6 @@ header h1 {
   opacity: 1;
   visibility: visible;
 }
-/* skjsj */
 .info {
   position: absolute;
   bottom: 18%;
@@ -251,54 +250,6 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* Flechas */
-.flecha {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  border: none;
-  color: white;
-  font-size: 3em;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.flecha:hover {
-  background: rgba(255,255,255,0.3);
-  color: #00ffff;
-  transform: translateY(-50%) scale(1.1);
-}
-
-.flecha-izq {
-  left: 30px;
-}
-
-.flecha-der {
-  right: 30px;
-}
-
-/* Móvil */
-@media (max-width: 768px) {
-  .info h1 {
-    font-size: 2.5em;
-  }
-  .info p {
-    font-size: 1.1em;
-  }
-  .flecha {
-    font-size: 2em;
-    width: 50px;
-    height: 50px;
-  }
-}
 
 main {
   background: var(--color-main);
