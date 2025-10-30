@@ -192,6 +192,29 @@
       header.classList.remove("shrink");
     }
   });
+//deslizar
+  let actual = 0;
+const diapositivas = document.querySelectorAll(".desliza");
+const siguiente = document.querySelector(".flecha-der");
+const anterior = document.querySelector(".flecha-izq");
+
+function mostrarDiapositiva(indice) {
+  diapositivas[actual].classList.remove("activo");
+  actual = (indice + diapositivas.length) % diapositivas.length;
+  diapositivas[actual].classList.add("activo");
+}
+
+// Flechas funcionales
+siguiente.addEventListener("click", () => {
+  mostrarDiapositiva(actual + 1);
+});
+
+anterior.addEventListener("click", () => {
+  mostrarDiapositiva(actual - 1);
+});
+
+// Cambio automático
+setInterval(() => mostrarDiapositiva(actual + 1), 6000);
     </script>
 </body>
 
