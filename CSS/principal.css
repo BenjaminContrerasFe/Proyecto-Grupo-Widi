@@ -188,7 +188,6 @@ header h1 {
 .intro {
   position: relative;
   height: 100vh;
-  background: url(../img/principal/intro1.jpg) no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,6 +209,7 @@ iframe {
   width: 1200px;
   height: 675px;
 }
+
 
 main {
   background: var(--color-main);
