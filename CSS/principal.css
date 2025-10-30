@@ -263,9 +263,7 @@ header h1 {
   cursor: pointer;
   transition: 0.3s;
   z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .flecha:hover {
@@ -280,6 +278,51 @@ header h1 {
 
 .flecha-der {
   right: 30px;
+}
+
+.auto-demo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 60px;
+  background-color: var(--color-fondo);
+  color: var(var(--color-texto));
+  border-top: 2px solid #ddd;
+}
+
+.texto {
+  width: 55%;
+}
+
+.texto h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+}
+
+.texto p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.mas {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--celeste-fot);
+}
+
+.mas:hover {
+  text-decoration: underline;
+}
+
+.image-content {
+  width: 40%;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
