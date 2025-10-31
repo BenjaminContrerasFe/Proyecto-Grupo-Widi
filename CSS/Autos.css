@@ -351,21 +351,48 @@ header h1 {
 }
 
 .boton-comparar {
-  position: relative;
-  background-color: #aaa;
-  color: white;
-  font-size: 2vw;
+  background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+  color: #fff;
+  font-size: 1.2vw;
   font-weight: bold;
-  padding: 15px 30px;
-  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px 60px;
+  border: 2px solid #4fc7f7;
+  border-radius: 50px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(79, 199, 247, 0.2);
+  position: relative;
   overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.boton-comparar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: 0.6s;
+}
+
+.boton-comparar:hover::before {
+  left: 130%;
 }
 
 .boton-comparar:hover {
-  background-color: rgb(32, 218, 218);
-  color: black;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #000;
+  box-shadow: 0 0 35px rgba(79, 199, 247, 0.7);
 }
 
 .model_3d model-viewer {
