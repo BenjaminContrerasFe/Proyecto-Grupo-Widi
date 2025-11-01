@@ -1,8 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -406,7 +407,8 @@ header h1 {
 }
 
 .model_3d model-viewer {
- height: auto;
+  background-color: #4f4848;
+  height: auto;
   /* o un alto fijo si querés */
   max-width: 95%;
   /* límite horizontal */
