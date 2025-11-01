@@ -278,10 +278,15 @@ header h1 {
 
 
 .galleria {
-  height: 50%;
-  margin: 50px auto 0;
+  height: auto; /* o un alto fijo si querés */
+  max-width: 95%; /* límite horizontal */
+  object-fit: cover;
+   border-radius: 20px;
+  box-shadow: 0 0 25px #46b9fa;
+  margin: 50px auto;
   overflow: hidden;
 }
+
 
 
 .galleria ul {
