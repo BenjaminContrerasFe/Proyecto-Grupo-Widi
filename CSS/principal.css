@@ -185,20 +185,20 @@ header h1 {
 
 /* fin del header */
 
-.intro {
+.hero {
   position: relative;
   height: 100vh;
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
 }
 
-.deslizar {
+.slider {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-.desliza {
+.slide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -209,10 +209,12 @@ header h1 {
   transition: opacity 1.2s ease-in-out, visibility 1.2s;
 }
 
-.desliza.activo {
+.slide.active {
   opacity: 1;
   visibility: visible;
 }
+
+/* Texto y botón */
 .info {
   position: absolute;
   bottom: 18%;
@@ -232,8 +234,8 @@ header h1 {
   margin: 15px 0 40px 0;
 }
 
-.boton {
-  background: rgba(255,255,255,0.15);
+.btn {
+  background: rgba(255,255,255,0.1);
   color: #fff;
   padding: 12px 30px;
   border: 2px solid #fff;
@@ -241,19 +243,20 @@ header h1 {
   text-decoration: none;
   font-size: 1.1em;
   transition: all 0.3s ease;
-  display: inline-block;
 }
 
-.boton:hover {
+.btn:hover {
   background: #fff;
   color: #000;
   transform: scale(1.05);
 }
-.flecha {
+
+/* Flechas */
+.arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
   border: none;
   color: white;
   font-size: 3em;
@@ -263,23 +266,21 @@ header h1 {
   cursor: pointer;
   transition: 0.3s;
   z-index: 10;
-
 }
 
-.flecha:hover {
+.arrow:hover {
   background: rgba(255,255,255,0.3);
   color: #00ffff;
   transform: translateY(-50%) scale(1.1);
 }
 
-.flecha-izq {
+.arrow.left {
   left: 30px;
 }
 
-.flecha-der {
+.arrow.right {
   right: 30px;
 }
-
 .auto-demo {
   display: flex;
   justify-content: space-between;
