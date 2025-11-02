@@ -192,6 +192,15 @@
             }
         });
     </script>
+    <script>
+        const boton = document.getElementById('boton-tema');
+        boton.addEventListener('click', () => {
+            document.body.classList.toggle('tema-claro');
+            boton.textContent = document.body.classList.contains('tema-claro')
+                ? '🌙 Modo noche'
+                : '☀️ Modo claro';
+        });
+    </script>
 </body>
 
 </html>
