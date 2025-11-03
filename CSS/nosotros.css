@@ -19,9 +19,9 @@ body {
     --color-fot-suave: #1c1c1c;
     --color-fot-suave2: #1c1c1c;
     --blanco: #ffffff;
-    --size-h2: clamp(1.3rem, -0.8rem + 3vw, 10rem);
-    --size-h3: clamp(1rem, -0.6rem + 2.8vw, 10rem);
-    --size-h4: clamp(0.8rem, -0.9rem + 2.6vw, 6rem);
+    --size-h2: clamp(1.6rem, -0.4rem + 3vw, 10rem);
+    --size-h3: clamp(1.4rem, -0.6rem + 2.8vw, 10rem);
+    --size-h4: clamp(1rem, -0.9rem + 2.6vw, 6rem);
     --size-p: clamp(0.8rem, -0.9rem + 2.4vw, 6rem);
     --azul: #4fc7f7;
     --azul-suave: #3a6bb1;
@@ -260,7 +260,27 @@ p, a{
     margin-top: 60px;
 }
 
+#Fondo ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.25rem;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1.4rem;
+    flex-wrap: wrap;
+}
 
+#Fondo ul span {
+    font-size: var(--size-h3);
+}
+
+#Fondo ul li{
+    background: linear-gradient(180deg, var(--fondo2), var(--fondo2));
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: var(--azul-claro);
+    font-weight: 600;
+}
 
 /* ==============fin main============== */
 
