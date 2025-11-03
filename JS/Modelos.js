@@ -52,7 +52,7 @@
           <div class="nombre-marca">${m.nombre}</div>
         `;
 
-        if (m.id === marcaActiva) div.style.background = '#eef6ff';
+        if (m.id === marcaActiva) div.style.background = '#333';
 
         div.addEventListener('click', () => {
           marcaActiva = m.id;
