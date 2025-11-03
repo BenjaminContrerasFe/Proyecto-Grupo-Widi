@@ -206,7 +206,14 @@ header h1 {
     text-align: center;
 }
 
-
+#Intro {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    text-align: center;
+    height: 45vw;
+}
 
 
 
