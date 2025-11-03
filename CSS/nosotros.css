@@ -251,7 +251,14 @@ p, a{
     font-size: var(--size-p);
 }
 
-
+#Esencia {
+    background: linear-gradient(180deg, var(--fondo), var(--fondo));
+    padding: 3vw;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+    width: 70vw;
+    margin-top: 60px;
+}
 
 
 
