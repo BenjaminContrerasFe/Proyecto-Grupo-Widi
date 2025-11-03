@@ -282,6 +282,16 @@ p, a{
     font-weight: 600;
 }
 
+.mov{
+    transition: var(--trans);
+}
+.mov:hover{
+    transform: translateY(-5px);
+    transition: var(--trans);
+}
+
+
+
 /* ==============fin main============== */
 
 /* ==============inicio footer============== */
