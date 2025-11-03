@@ -30,7 +30,7 @@ body {
     --fondo:rgba(255, 255, 255, 0.03);
     --fondo2:rgba(80, 80, 80, 0.3);
     --sombra:rgba(31, 78, 140, 0.14);
-    --img:url("fondo.jpg");
+    --img:url("../img/Nosotros/fondo.jpg");
 
     --heigt-perfil: 300px;
     --color-texto: #fff;
@@ -197,6 +197,9 @@ header h1 {
 /* ==============fin header============== */
 
 /* ==============inicio main============== */
+main{
+    margin-top: 190px;
+}
 
 #Quienes-somos {
     display: flex;
@@ -222,8 +225,17 @@ header h1 {
         border-radius: 12px;
         box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
         width: 70vw;
+        position: relative;
+        top: -12vw;
 }
 
+.Sombra {
+    background-image:var(--img);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
 
 
 
