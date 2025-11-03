@@ -333,7 +333,51 @@ p, a{
     justify-content: center;
 }
 
+.C {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border-radius: 14px;
+    width: 320px;
+    padding: 1.8rem;
+    transition: transform var(--trans), box-shadow var(--trans);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
 
+.C::before {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
+    transform: rotate(25deg);
+    transition: 1s ease;
+    pointer-events: none;
+}
+
+.C:hover::before {
+    top: -20%;
+    left: -20%;
+}
+
+.C:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+}
+
+.texto{
+    text-align: center;
+}
+.C .texto h3{
+    color: var(--azul);
+    margin-bottom: 0.6rem;
+}
+.C .texto p {
+    color: var(--blanco);
+}
 
 /* ==============fin main============== */
 
