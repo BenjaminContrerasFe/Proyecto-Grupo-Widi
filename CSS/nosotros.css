@@ -290,6 +290,17 @@ p, a{
     transition: var(--trans);
 }
 
+#Numeros {
+    padding: 2.2vw;
+}
+#Num {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    margin: 2rem 0;
+}
+
 
 
 /* ==============fin main============== */
