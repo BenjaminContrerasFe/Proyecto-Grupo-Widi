@@ -316,6 +316,25 @@ p, a{
     color: var(--blanco);
 }
 
+#V1{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#V2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+
+
 /* ==============fin main============== */
 
 /* ==============inicio footer============== */
