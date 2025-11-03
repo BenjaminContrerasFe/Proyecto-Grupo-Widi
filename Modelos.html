@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deushcland</title>
+</head>
+
+<body>
+  <header>
+    <div class="titulo">Descubre el modelo de auto que prefieras</div>
+    <p class="subtitulo">Explora los modelos más recientes y encuentra el motor y estilo que más se adapta a ti.</p>
+  </header>
+
+  <div class="contenedor">
+    <!--  FILTROS  -->
+    <aside class="lateral">
+      <div class="titulo-filtro">Filtros</div>
+      <div style="height:12px"></div>
+      <div class="lista-marcas" id="listaMarcas">
+      <!-- marcas echas con js -->
+      </div>
+    </aside>
+
+
+    <main class="principal">
+      <div class="barra-controles">
+        <div class="etiquetas">
+          <div class="etiqueta">100 % eléctrico</div>
+          <div class="etiqueta">SUV</div>
+          <div class="contador" id="contadorResultados">(0) modelos</div>
+        </div>
+
+        <div style="display:flex; gap:12px; align-items:center">
+          <select id="seleccionCombustible" class="seleccion">
+            <option value="todo">Combustible</option>
+            <option value="electrico">100 % eléctrico</option>
+            <option value="hibrido">Híbrido</option>
+            <option value="nafta">Nafta</option>
+          </select>
+        </div>
+      </div>
+
+      <section class="rejilla" id="rejillaAutos"></section>
+    </main>
+  </div>
+</body>
+</html>
