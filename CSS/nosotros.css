@@ -300,8 +300,21 @@ p, a{
     align-items: center;
     margin: 2rem 0;
 }
+#Num p{
+    background: var(--color-fot-suave2);
+    padding: 1rem 0.8rem;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--azul);
+    transition: transform var(--trans), background var(--trans);
+}
 
-
+#Num p:hover {
+    transform: translateY(-6px);
+    background: linear-gradient(90deg,var(--fondo), var(--fondo2),var(--fondo));
+    color: var(--blanco);
+}
 
 /* ==============fin main============== */
 
