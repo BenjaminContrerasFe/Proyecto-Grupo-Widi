@@ -5,11 +5,13 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--black-soft);
+    background:
+        radial-gradient(circle at 30% 20%, rgba(58, 107, 177, 0.06) 0%, transparent 60%),
+        linear-gradient(180deg, var(--color-fot), var(--color-fot-suave));
+    color: var(--blanco);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
+
 
 :root {
     --color-fot: #0e0e0e;
