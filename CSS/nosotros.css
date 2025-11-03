@@ -209,13 +209,20 @@ header h1 {
 #Intro {
     display: flex;
     justify-content: center;
-    align-items:  center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     height: 45vw;
 }
 
-
+#Intro div{
+        background: linear-gradient(180deg, var(--fondo), var(--fondo));
+        padding: 1vw;
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+        width: 70vw;
+}
 
 
 
