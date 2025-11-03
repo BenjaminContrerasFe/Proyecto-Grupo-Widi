@@ -237,6 +237,22 @@ main{
     width: 100vw;
 }
 
+.h2{
+    font-size: var(--size-h2);
+}
+.h3{
+    font-size: var(--size-h3);
+}
+h4{
+    font-size: var(--size-h4);
+    margin-top: 5px;
+}
+p, a{
+    font-size: var(--size-p);
+}
+
+
+
 
 
 /* ==============fin main============== */
