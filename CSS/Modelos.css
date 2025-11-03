@@ -17,7 +17,7 @@
       background: var(--fondo);
     }
 
-    header {
+    .arriba {
       padding: 28px 36px;
       border-bottom: 1px solid #e6e6e6;
       background: linear-gradient(180deg, #fff, transparent);
@@ -254,3 +254,72 @@
         grid-template-columns: 1fr;
       }
     }
+    footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.foot {
+  background-color: var(--color-fot);
+  border-top: 3px solid var(--celeste-fot);
+  /* Línea xd */
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  color: var(--celeste-fot);
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.foot-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.foot-column h4 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.foot-column a {
+  display: block;
+  color: var(--color-texto);
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.foot-column a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom {
+  border-top: 1px solid var(--color-texto);
+  text-align: center;
+  padding-top: 20px;
+  font-size: 0.9rem;
+}
+
+.foot-bottom a {
+  color: var(--celeste-fot);
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.foot-bottom a:hover {
+  text-decoration: underline;
+}
+
+.foot-bottom p {
+  margin: 10px 0;
+}
+
+
