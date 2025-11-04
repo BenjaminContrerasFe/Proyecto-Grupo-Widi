@@ -24,7 +24,7 @@ body {
   color: var(--color-texto);
 }
 
-/* Encabezado */
+
 .arriba {
   padding: 28px 36px;
   border-bottom: 1px solid var(--celeste-fot);
@@ -43,7 +43,7 @@ body {
   font-size: 14px;
 }
 
-/* Contenedor principal */
+/* cont principal */
 .contenedor {
   display: flex;
   gap: 80px;
@@ -53,7 +53,7 @@ body {
   align-items: flex-start;
 }
 
-/* Lateral filtros */
+/* lateral filtros */
 .lateral {
   width: 320px;
   background: transparent;
@@ -107,7 +107,6 @@ body {
   color: var(--color-texto);
 }
 
-/* Sección principal */
 .principal {
   flex: 1;
 }
@@ -132,7 +131,7 @@ body {
   font-size: 13px;
 }
 
-/* Tarjeta autos */
+/* tarjeta autos */
 .rejilla {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -177,7 +176,6 @@ body {
   border-radius: 4px;
 }
 
-/* Imagen */
 .imagen-auto {
   width: 100%;
   height: 160px;
@@ -243,29 +241,105 @@ body {
   font-size: 13px;
 }
 
-/* Responsive */
-@media (max-width: 1000px) {
+/* responsive */
+@media (max-width: 1200px) {
   .rejilla {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
   .contenedor {
     gap: 40px;
   }
 }
+@media (max-width: 900px) {
+  .rejilla {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .contenedor {
+    gap: 30px;
+  }
+}
 
-@media (max-width: 700px) {
+
+@media (max-width: 600px) {
   .lateral {
     display: none;
   }
   .contenedor {
     padding: 0 12px;
+    margin: 0 5%;
+    flex-direction: column;
   }
   .rejilla {
     grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .titulo {
+    font-size: 24px;
   }
 }
 
-/* Footer */
+@media (max-width: 500px) {
+  .arriba {
+    padding: 18px;
+  }
+  .rejilla {
+    gap: 15px;
+  }
+  .auto {
+    padding: 12px;
+  }
+  .imagen-auto {
+    height: 150px;
+  }
+  .modelo {
+    font-size: 15px;
+  }
+  .titulo {
+    font-size: 22px;
+  }
+}
+
+/* Responsive mínimo 350px */
+@media (max-width: 350px) {
+  .arriba {
+    padding: 14px;
+  }
+  .titulo {
+    font-size: 20px;
+  }
+  .subtitulo {
+    font-size: 12px;
+  }
+  .auto {
+    padding: 10px;
+  }
+  .imagen-auto {
+    height: 130px;
+  }
+  .modelo {
+    font-size: 14px;
+  }
+  .tipo, .combustible {
+    font-size: 10px;
+  }
+  .favorito {
+    width: 30px;
+    height: 30px;
+  }
+  .foot {
+    padding: 30px 20px;
+  }
+  .foot-column h4 {
+    font-size: 13px;
+  }
+  .foot-column a {
+    font-size: 12px;
+  }
+}
+
+/* footer */
 footer {
   text-align: center;
   padding: 20px;
