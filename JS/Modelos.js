@@ -102,9 +102,12 @@ function mostrarAutos() {
     `;
 
     tarjeta.addEventListener('click', e => {
-      if (!e.target.classList.contains('favorito')) {
+      if (a.href) {
+        window.location.href = a.href;
+      } else {
         window.location.href = `detalle.html?id=${a.id}`;
       }
+
     });
 
     rejillaAutos.appendChild(tarjeta);
