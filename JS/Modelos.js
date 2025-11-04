@@ -11,7 +11,9 @@ const marcas = [
   { id: 'porsche', nombre: 'Porsche', logo: 'https://api-core.multimotors.by/storage/brands/5a1b42af-639b-47f5-ac36-0f1bb9da4331.webp' },
   { id: 'tesla', nombre: 'Tesla', logo: 'https://static.wikia.nocookie.net/nfs/images/4/48/TeslaSmallmain.webp/revision/latest?cb=20250102170647&path-prefix=es' },
   { id: 'chevrolet', nombre: 'Chevrolet', logo: 'https://lh5.googleusercontent.com/proxy/8WEZB7vkIMggpu28eObd8Lvk9WUIbOTBxMiUSjecgWOu518eWHfd05vcXAXGbHwZCyyEtgTfsvedtRiw3oS3svZY3j0YqtH16S3v-hX7svzdiw' },
-  { id: 'honda', nombre: 'Honda', logo: 'https://magodoscarros.com/images/brands/honda.webp' }
+  { id: 'honda', nombre: 'Honda', logo: 'https://magodoscarros.com/images/brands/honda.webp' },
+  { id: 'ford', nombre: 'Ford', logo: 'https://automacar.com/wp-content/uploads/2018/02/marcas_0000_Ford.png' },
+  { id: 'Bugatti', nombre: 'Bugatti', logo: 'https://static.wikia.nocookie.net/nfs/images/4/49/BugattiSmallMain.png/revision/latest?cb=20200524162256&path-prefix=en' }
 ];
 
 // Lista de autos con imágenes de ejemplo
@@ -24,7 +26,7 @@ const autos = [
   { id: 6, marca: 'mercedes', nombre: 'Mercedes EQB', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 7, marca: 'nissan', nombre: 'Nissan Ariya', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 8, marca: 'porsche', nombre: 'Porsche Taycan', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 9, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
+  { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 10, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 11, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 12, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' }
