@@ -20,7 +20,7 @@ const rutas = {
   1: 'Audi-R8.html',
   2: 'Tesla-Model3.html',//maxi pone las rutas aca
   3: 'Ferrari-Roma.html',
-  4: 'Toyota-CorollaCross.html',
+  4: 'Audi-R8.htmlM',
   5: 'BMW-i4.html',
   6: 'Mercedes-190SL.html',
   7: 'Nissan-Ariya.html',
@@ -33,12 +33,12 @@ const rutas = {
 
 // DATOS DE AUTOS 
 const autos = [
-  { id: 1, marca: 'Audi', nombre: 'Audi R8', combustible: 'Nafta', favorito: false, imagen: 'img/Audi-R8/Vista-Principal.webp' },
+  { id: 1, marca: 'Audi', nombre: 'Audi R8', combustible: 'nafta', favorito: false, imagen: 'img/Audi-R8/Vista-Principal.webp' },
   { id: 2, marca: 'Tesla', nombre: 'Tesla Model 3', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2023/12/436A9121-1.jpg' },
   { id: 3, marca: 'Ferrari', nombre: 'Ferrari Roma', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/10/436A6748.jpg' },
   { id: 4, marca: 'Toyota', nombre: 'Toyota Corolla Cross', combustible: 'hibrido', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 5, marca: 'Bmw', nombre: 'BMW i4', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 6, marca: 'Mercedes', nombre: 'Mercedes EQB', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
+  { id: 6, marca: 'Mercedes', nombre: 'Mercedes-190SL', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 7, marca: 'Nissan', nombre: 'Nissan Ariya', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 8, marca: 'Porsche', nombre: 'Porsche Taycan', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
   { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
