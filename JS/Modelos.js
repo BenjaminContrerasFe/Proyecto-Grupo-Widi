@@ -18,7 +18,7 @@ const marcas = [
 //RUTAS DE HTML
 const rutas = {
   1: 'Audi-R8.html',
-  2: 'Tesla-Model3.html',
+  2: 'Tesla-Model3.html',//maxi pone las rutas aca
   3: 'Ferrari-Roma.html',
   4: 'Toyota-CorollaCross.html',
   5: 'BMW-i4.html',
