@@ -1,50 +1,50 @@
 //  DATOS DE MARCAS 
 const marcas = [
   { id: 'todo', nombre: 'Todas', logo: 'https://images.emojiterra.com/microsoft/fluent-emoji/15.1/3d/1f310_3d.png' },
-  { id: 'volkswagen', nombre: 'Volkswagen', logo: 'https://www.codinter.com/en/wp-content/uploads/sites/2/2018/01/logo-volkswagen-256x256.png' },
-  { id: 'audi', nombre: 'Audi', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-audi-icon-svg-download-png-2874686.png' },
-  { id: 'ferrari', nombre: 'Ferrari', logo: 'https://static.wikia.nocookie.net/nfs/images/1/1c/FerrariSmallMain.webp/revision/latest?cb=20250102175436&path-prefix=es' },
-  { id: 'nissan', nombre: 'Nissan', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-nissan-icon-svg-download-png-202859.png' },
-  { id: 'bmw', nombre: 'BMW', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAxR4zvwleGvWWq0oMkBBzUdA5_y67vuurg&s' },
-  { id: 'mercedes', nombre: 'Mercedes-Benz', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-mercedes-icon-svg-download-png-202855.png' },
-  { id: 'toyota', nombre: 'Toyota', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-toyota-icon-svg-download-png-2874755.png' },
-  { id: 'porsche', nombre: 'Porsche', logo: 'https://api-core.multimotors.by/storage/brands/5a1b42af-639b-47f5-ac36-0f1bb9da4331.webp' },
-  { id: 'tesla', nombre: 'Tesla', logo: 'https://static.wikia.nocookie.net/nfs/images/4/48/TeslaSmallmain.webp/revision/latest?cb=20250102170647&path-prefix=es' },
-  { id: 'chevrolet', nombre: 'Chevrolet', logo: 'https://lh5.googleusercontent.com/proxy/8WEZB7vkIMggpu28eObd8Lvk9WUIbOTBxMiUSjecgWOu518eWHfd05vcXAXGbHwZCyyEtgTfsvedtRiw3oS3svZY3j0YqtH16S3v-hX7svzdiw' },
-  { id: 'honda', nombre: 'Honda', logo: 'https://magodoscarros.com/images/brands/honda.webp' },
-  { id: 'ford', nombre: 'Ford', logo: 'https://automacar.com/wp-content/uploads/2018/02/marcas_0000_Ford.png' },
+  { id: 'Volkswagen', nombre: 'Volkswagen', logo: 'https://www.codinter.com/en/wp-content/uploads/sites/2/2018/01/logo-volkswagen-256x256.png' },
+  { id: 'Audi', nombre: 'Audi', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-audi-icon-svg-download-png-2874686.png' },
+  { id: 'Ferrari', nombre: 'Ferrari', logo: 'https://static.wikia.nocookie.net/nfs/images/1/1c/FerrariSmallMain.webp/revision/latest?cb=20250102175436&path-prefix=es' },
+  { id: 'Nissan', nombre: 'Nissan', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-nissan-icon-svg-download-png-202859.png' },
+  { id: 'Bmw', nombre: 'BMW', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAxR4zvwleGvWWq0oMkBBzUdA5_y67vuurg&s' },
+  { id: 'Mercedes', nombre: 'Mercedes-Benz', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-mercedes-icon-svg-download-png-202855.png' },
+  { id: 'Toyota', nombre: 'Toyota', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-toyota-icon-svg-download-png-2874755.png' },
+  { id: 'Porsche', nombre: 'Porsche', logo: 'https://api-core.multimotors.by/storage/brands/5a1b42af-639b-47f5-ac36-0f1bb9da4331.webp' },
+  { id: 'Tesla', nombre: 'Tesla', logo: 'https://static.wikia.nocookie.net/nfs/images/4/48/TeslaSmallmain.webp/revision/latest?cb=20250102170647&path-prefix=es' },
+  { id: 'Chevrolet', nombre: 'Chevrolet', logo: 'https://lh5.googleusercontent.com/proxy/8WEZB7vkIMggpu28eObd8Lvk9WUIbOTBxMiUSjecgWOu518eWHfd05vcXAXGbHwZCyyEtgTfsvedtRiw3oS3svZY3j0YqtH16S3v-hX7svzdiw' },
+  { id: 'Honda', nombre: 'Honda', logo: 'https://magodoscarros.com/images/brands/honda.webp' },
+  { id: 'Ford', nombre: 'Ford', logo: 'https://automacar.com/wp-content/uploads/2018/02/marcas_0000_Ford.png' },
   { id: 'Bugatti', nombre: 'Bugatti', logo: 'https://static.wikia.nocookie.net/nfs/images/4/49/BugattiSmallMain.png/revision/latest?cb=20200524162256&path-prefix=en' }
 ];
 //RUTAS DE HTML
 const rutas = {
   1: 'Audi-R8.html',
-  2: 'Tesla-Model3.html',//maxi pone las rutas aca
-  3: 'Ferrari-Roma.html',
-  4: 'Audi-R8.htmlM',
-  5: 'BMW-i4.html',
+  2: 'Lamborghini-350-GT.html',//maxi pone las rutas aca
+  3: 'Ferrari-Challenger-Stradale.html',
+  4: 'Ferrari-488.html',
+  5: 'Lamborghini-S-Coupe.html',
   6: 'Mercedes-190SL.html',
-  7: 'Nissan-Ariya.html',
+  7: 'Chevrolet-Camaro-SS1.html',
   8: 'Porsche-Taycan.html',
   9: 'Bugatti-Chiron.html',
-  10: 'Chevrolet-Onix.html',
-  11: 'Chevrolet-Onix2.html',
-  12: 'Chevrolet-Onix3.html'
+  10: 'Porsche-911.html',
+  11: 'Porsche-356A.html',
+  12: 'Nissan-Gt-R35.html'
 };
 
 // DATOS DE AUTOS 
 const autos = [
   { id: 1, marca: 'Audi', nombre: 'Audi R8', combustible: 'nafta', favorito: false, imagen: 'img/Audi-R8/Vista-Principal.webp' },
-  { id: 2, marca: 'Tesla', nombre: 'Tesla Model 3', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2023/12/436A9121-1.jpg' },
-  { id: 3, marca: 'Ferrari', nombre: 'Ferrari Roma', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/10/436A6748.jpg' },
-  { id: 4, marca: 'Toyota', nombre: 'Toyota Corolla Cross', combustible: 'hibrido', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 5, marca: 'Bmw', nombre: 'BMW i4', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 6, marca: 'Mercedes', nombre: 'Mercedes-190SL', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 7, marca: 'Nissan', nombre: 'Nissan Ariya', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 8, marca: 'Porsche', nombre: 'Porsche Taycan', combustible: 'electrico', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 10, marca: 'Chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 11, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' },
-  { id: 12, marca: 'chevrolet', nombre: 'Chevrolet Onix', combustible: 'nafta', favorito: false, imagen: 'https://wobcars.com/wp-content/uploads/2025/05/2018-Bugatti-Chiron-1.webp' }
+  { id: 2, marca: 'Lamborghini', nombre: 'Lamborghini 350 GT', combustible: 'nafta', favorito: false, imagen: 'img/Lamborghini-350/Vista-Principal.jpg' },
+  { id: 3, marca: 'Ferrari', nombre: 'Ferrari 360 Challenger Stradale', combustible: 'nafta', favorito: false, imagen: 'img/Ferrari-360-Stradale/Vista-Principal.jpg' },
+  { id: 4, marca: 'Ferrari', nombre: 'Ferrari 488 GTB', combustible: 'nafta', favorito: false, imagen: 'img/Ferrari/Ferrari-principal.webp' },
+  { id: 5, marca: 'Lamborghini', nombre: 'Lamborghini S Coupe', combustible: 'nafta', favorito: false, imagen: 'img/Lamborghini/Vista-Principal.webp' },
+  { id: 6, marca: 'Mercedes', nombre: 'Mercedes-190SL', combustible: 'nafta', favorito: false, imagen: 'img/Mercedes-190SL/Mercedes-principal.webp' },
+  { id: 7, marca: 'Chevrolet', nombre: 'Chevrolet', combustible: 'nafta', favorito: false, imagen: 'img/Chevrolet-Camaro-SS1/Vista-Principal.webp' },
+  { id: 8, marca: 'Porsche', nombre: 'Porsche Taycan GTS', combustible: 'electrico', favorito: false, imagen: 'img/Porsche-Taycan-GTS/Vista-Principal.webp' },
+  { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'img/Bugatti Chiron/Vista-Principal.webp' },
+  { id: 10, marca: 'Porsche', nombre: 'Porsche 911', combustible: 'nafta', favorito: false, imagen: 'img/porshe911/Vista-Principal.webp' },
+  { id: 11, marca: 'Porsche', nombre: 'Porsche 356A', combustible: 'nafta', favorito: false, imagen: 'img/Porsche356A/Vista-Principal.webp' },
+  { id: 12, marca: 'Nissan', nombre: 'Nissan GT R-35', combustible: 'nafta', favorito: false, imagen: 'img/Gtr-35/Vista-Principal.webp' }
 ];
 
 // REFERENCIAS HTML
