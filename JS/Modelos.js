@@ -24,7 +24,7 @@ const rutas = {
   5: 'Lamborghini-S-Coupe.html',
   6: 'Mercedes-190SL.html',
   7: 'Chevrolet-Camaro-SS1.html',
-  8: 'Porsche-Taycan.html',
+  8: 'Porsche-Taycan-GTS.html',
   9: 'Bugatti-Chiron.html',
   10: 'Porsche-911.html',
   11: 'Porsche-356A.html',
