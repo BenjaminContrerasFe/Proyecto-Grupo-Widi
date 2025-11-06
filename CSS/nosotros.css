@@ -41,7 +41,23 @@ body {
     --color-fot: #0e0e0e;
     --celeste-fot: #4fc7f7;
 }
-
+:root.light-mode{
+    --color-fot: #e7e7e7;
+    --color-fot-suave: #dadada;
+    --color-fot-suave2: #ffffff;
+    --gris: #444444;
+    --blanco: #0f0f0f;
+    --azul: #2183aa;
+    --azul-suave: #3a6bb1;
+    --azul-claro: #003580;
+    --fondo:rgba(224, 224, 224, 0.03);
+    --sombra:rgba(31, 78, 140, 0.14);
+    --fondo2:rgba(255, 255, 255, 0.8);
+    --img:url("../img/Nosotros/fondo2.jpg");
+    --color-texto: black;
+    --celeste-fot: #08b9ff;
+    --color-nav: #7a7a7a;
+}
 
 /* comienza header */
 header {
@@ -193,6 +209,10 @@ header h1 {
 
 .btn-home:hover {
     transform: scale(1.2);
+}
+
+.menu-icon, .menu-text{
+    color: white;
 }
 /* ==============fin header============== */
 

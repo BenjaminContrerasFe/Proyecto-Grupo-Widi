@@ -306,9 +306,24 @@
 
 /* elementos que queremos animar al aparecer */
 document.querySelectorAll('section, .C, #Num p, #G1 img, h2, h3, #Fondo').forEach(el => {
-  el.classList.add('reveal'); // poner estado inicial
+  el.classList.add('reveal');
   observer.observe(el);
 });
+const themeBtn = document.getElementById('boton-tema'); 
+
+if(themeBtn){
+
+  const saved = localStorage.getItem('theme');
+  if(saved === 'light') document.documentElement.classList.add('light-mode');
+
+  themeBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('light-mode');
+    const active = document.documentElement.classList.contains('light-mode') ? 'light' : 'dark';
+    localStorage.setItem('theme', active);
+    // Opcional: cambiar texto del botón
+    themeBtn.textContent = active === 'light' ? '🌞 Modo oscuro' : '🌙 Modo claro';
+  });
+}
     </script>
 
 </html>
