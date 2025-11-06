@@ -1,19 +1,19 @@
 //  DATOS DE MARCAS 
 const marcas = [
-  { id: 'todo', nombre: 'Todas', logo: 'https://images.emojiterra.com/microsoft/fluent-emoji/15.1/3d/1f310_3d.png' },
-  { id: 'Volkswagen', nombre: 'Volkswagen', logo: 'https://www.codinter.com/en/wp-content/uploads/sites/2/2018/01/logo-volkswagen-256x256.png' },
-  { id: 'Audi', nombre: 'Audi', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-audi-icon-svg-download-png-2874686.png' },
-  { id: 'Ferrari', nombre: 'Ferrari', logo: 'https://static.wikia.nocookie.net/nfs/images/1/1c/FerrariSmallMain.webp/revision/latest?cb=20250102175436&path-prefix=es' },
-  { id: 'Nissan', nombre: 'Nissan', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-nissan-icon-svg-download-png-202859.png' },
-  { id: 'Bmw', nombre: 'BMW', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAxR4zvwleGvWWq0oMkBBzUdA5_y67vuurg&s' },
-  { id: 'Mercedes', nombre: 'Mercedes-Benz', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-mercedes-icon-svg-download-png-202855.png' },
-  { id: 'Toyota', nombre: 'Toyota', logo: 'https://cdn.iconscout.com/icon/free/png-256/free-toyota-icon-svg-download-png-2874755.png' },
-  { id: 'Porsche', nombre: 'Porsche', logo: 'https://api-core.multimotors.by/storage/brands/5a1b42af-639b-47f5-ac36-0f1bb9da4331.webp' },
-  { id: 'Tesla', nombre: 'Tesla', logo: 'https://static.wikia.nocookie.net/nfs/images/4/48/TeslaSmallmain.webp/revision/latest?cb=20250102170647&path-prefix=es' },
-  { id: 'Chevrolet', nombre: 'Chevrolet', logo: 'https://lh5.googleusercontent.com/proxy/8WEZB7vkIMggpu28eObd8Lvk9WUIbOTBxMiUSjecgWOu518eWHfd05vcXAXGbHwZCyyEtgTfsvedtRiw3oS3svZY3j0YqtH16S3v-hX7svzdiw' },
-  { id: 'Honda', nombre: 'Honda', logo: 'https://magodoscarros.com/images/brands/honda.webp' },
-  { id: 'Ford', nombre: 'Ford', logo: 'https://automacar.com/wp-content/uploads/2018/02/marcas_0000_Ford.png' },
-  { id: 'Bugatti', nombre: 'Bugatti', logo: 'https://static.wikia.nocookie.net/nfs/images/4/49/BugattiSmallMain.png/revision/latest?cb=20200524162256&path-prefix=en' }
+  { id: 'todo', nombre: 'Todas', logo: 'img/Logos/Mundo.png' },
+  { id: 'Volkswagen', nombre: 'Volkswagen', logo: 'img/Logos/Volkswagen_logo_PNG2.png' },
+  { id: 'Audi', nombre: 'Audi', logo: 'img/Logos/Audi_logo_PNG3.png' },
+  { id: 'Ferrari', nombre: 'Ferrari', logo: 'img/Logos/Ferrari_logo.png' },
+  { id: 'Nissan', nombre: 'Nissan', logo: 'img/Logos/Nissan-Logo-PNG.png' },
+  { id: 'Bmw', nombre: 'BMW', logo: 'img/Logos/BMW_logo_PNG1.png' },
+  { id: 'Mercedes', nombre: 'Mercedes-Benz', logo: 'img/Logos/Mercedes-Benz-Logo.png' },
+  { id: 'Toyota', nombre: 'Toyota', logo: 'img/Logos/Toyota-logo-1-1.png' },
+  { id: 'Porsche', nombre: 'Porsche', logo: 'img/Logos/porsche-logo-18.png' },
+  { id: 'Tesla', nombre: 'Tesla', logo: 'img/Logos/Tesla_logo_PNG5.png' },
+  { id: 'Chevrolet', nombre: 'Chevrolet', logo: 'img/Logos/Chevrolet_logo_PNG9.png' },
+  { id: 'Honda', nombre: 'Honda', logo: 'img/Logos/Honda-Moto-Logo_PNG1.png' },
+  { id: 'Ford', nombre: 'Ford', logo: 'img/Logos/Ford-logo-1.png' },
+  { id: 'Bugatti', nombre: 'Bugatti', logo: 'img/Logos/Bugatti-Logo-PNG.png' }
 ];
 //RUTAS DE HTML
 const rutas = {
@@ -28,7 +28,10 @@ const rutas = {
   9: 'Bugatti-Chiron.html',
   10: 'Porsche-911.html',
   11: 'Porsche-356A.html',
-  12: 'Nissan-Gt-R35.html'
+  12: 'Nissan-Gt-R35.html',
+  13: 'Ford-Mustang-Boss.html',
+  14: 'Dino-208.html'
+  
 };
 
 // DATOS DE AUTOS 
@@ -44,7 +47,9 @@ const autos = [
   { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'img/Bugatti Chiron/Vista-Principal.webp' },
   { id: 10, marca: 'Porsche', nombre: 'Porsche 911', combustible: 'nafta', favorito: false, imagen: 'img/porshe911/Vista-Principal.webp' },
   { id: 11, marca: 'Porsche', nombre: 'Porsche 356A', combustible: 'nafta', favorito: false, imagen: 'img/Porsche356A/Vista-Principal.webp' },
-  { id: 12, marca: 'Nissan', nombre: 'Nissan GT R-35', combustible: 'nafta', favorito: false, imagen: 'img/Gtr-35/Vista-Principal.webp' }
+  { id: 12, marca: 'Nissan', nombre: 'Nissan GT R-35', combustible: 'nafta', favorito: false, imagen: 'img/Gtr-35/Vista-Principal.webp' },
+  { id: 13, marca: 'Ford', nombre: '1969 Ford Mustang Boss 429 ', combustible: 'nafta', favorito: false, imagen: 'img/Mustang/Vista-Principal.webp' },
+  { id: 14, marca: 'Ferrari', nombre: '1975 Ferrari Dino 208 GT4', combustible: 'nafta', favorito: false, imagen: 'img/Dino-208/Ferrari-Dino-208.webp' }
 ];
 
 // REFERENCIAS HTML
