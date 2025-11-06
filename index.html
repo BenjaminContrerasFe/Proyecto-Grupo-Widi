@@ -1,50 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Consecionaria Deutschland</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu desplegable</title>
+    <link rel="stylesheet" href="header.css">
 </head>
 <body>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Deustchland</h1>
 
-<div class="sidebar" id="sidebar">
-  <div>
-    <div class="header">
-      <img src="img/principal/img-logo-fnegro.jpeg" alt="Logo">
-      <div class="info">
-        <strong>Deutschland</strong><br>
-        <small>Concesionaria</small>
-      </div>
-    </div>
-    <div class="menu">
-      <a href="index.html" class="menu-item active"><i class="fas fa-home"></i><span>Inicio</span></a>
-      <div class="menu-item"><i class="fas fa-chart-bar"></i><span>Ingresos</span></div>
-      <a href="terminos.html" class="menu-item"><i class="fas fa-bell"></i><span>Terminos</span></a>
-      <a href="soporte.html" class="menu-item"><i class="fas fa-chart-line"></i><span>Soporte</span></a>
-      <a href="nosotros.html" class="menu-item"><i class="fas fa-heart"></i><span>Nosotros</span></a>
-      <a href="Contacto.html" class="menu-item"><i class="fas fa-wallet"></i><span>Contactanos</span></a>
-    </div>
-  </div>
-  <div class="bottom">
-    <a href="Formulario.html" class="menu-item"><i class="fas fa-sign-in-alt"></i><span>Iniciar sesión</span></a>
-    <div class="toggle-theme">
-      <i class="fas fa-moon"></i><span>Modo Oscuro</span>
-      <label class="switch">
-        <input type="checkbox" id="theme-toggle">
-      </label>
-    </div>
-    <div class="toggle-sidebar">
-      <i class="fas fa-angle-double-left" id="collapse-icon"></i><span>Colapsar</span>
-    </div>
-  </div>
-</div>
-<div class="carousel">
-      <!-- list item -->
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">About <img src="assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link">Projects  <img src="assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 1</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 2</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 3</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contact</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="assets/menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>
+    <main>
+    <div class="carousel">
       <div class="list">
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
+          <img src="IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
           <div class="content">
             <div class="author">CALLMEREV</div>
             <div class="title">1959 Porsche 356A Coupe</div>
@@ -53,13 +73,13 @@
               Este Porsche 356A Coupe de 1959 es un clásico atemporal, emblemático del diseño alemán de mediados del siglo XX. Su carrocería elegante y compacta combina líneas suaves con un rendimiento sorprendentemente ágil para su época. Perfecto para coleccionistas o entusiastas que valoran la historia automotriz y una experiencia de manejo única y auténtica.
             </div>
             <div class="buttons">
-              <button><a href="Lamborghini.html" class="link">SEE MORE</a></button>
+              <button><a href="Lamborghini.html" class="link">VER MAS</a></button>
               <button>SUBSCRIBE</button>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/2018-Bugatti-Chiron-1.webp" />
+          <img src="IMAGEN/2018-Bugatti-Chiron-1.webp" />
           <div class="content">
             <div class="author">CALLMEREV</div>
             <div class="title">Bugatti Chiron</div>
@@ -68,13 +88,13 @@
               El Bugatti Chiron 2018 representa la cima de la ingeniería automotriz de lujo y desempeño. Equipado con un motor W16 de 8.0 litros que genera más de 1500 caballos de fuerza, ofrece una aceleración y velocidad máxima excepcionales. Este superdeportivo es una obra maestra de tecnología y diseño, ideal para quienes buscan exclusividad, sofisticación y potencias extremas en cada detalle.
             </div>
             <div class="buttons">
-              <button><a href="Bugatti-Chiron.html" class="link">SEE MORE</a></button>
+              <button><a href="Lamborghini.html" class="link">VER MAS</a></button>
               <button>SUBSCRIBE</button>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
+          <img src="IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
           <div class="content">
             <div class="author">CALLMEREV</div>
             <div class="title">Lamborghini Aventador S</div>
@@ -83,13 +103,13 @@
               El Lamborghini Aventador S Coupe 2018 es la combinación perfecta entre potencia y diseño agresivo. Su motor V12 de 730 caballos de fuerza brinda una respuesta fulminante y una experiencia de manejo emocionante, mientras que su estética imponente y aerodinámica lo convierte en un ícono del lujo deportivo italiano. Es el auto ideal para quienes desean destacar en el asfalto con estilo y alto rendimiento.
             </div>
             <div class="buttons">
-              <button><a href="Lamborghini.html" class="link">SEE MORE</a></button>
+              <button><a href="Lamborghini.html" class="link">VER MAS</a></button>
               <button>SUBSCRIBE</button>
             </div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
+          <img src="IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
           <div class="content">
             <div class="author">CALLMEREV</div>
             <div class="title">Dodge Challenger</div>
@@ -98,50 +118,46 @@
               El Dodge Challenger SRT Hellcat Redeye 2020 es el epítome del muscle car americano moderno. Su motor V8 supercargado de más de 790 caballos de fuerza entrega una potencia pura y un torque impresionante, generando una experiencia de conducción llena de adrenalina. Con un diseño robusto y una actitud desafiante, este vehículo combina tradición con tecnología para los amantes de la velocidad y la potencia sin concesiones.
             </div>
             <div class="buttons">
-              <button><a href="Dodge-redeye.html" class="link">SEE MORE</a></button>
+              <button><a href="Lamborghini.html" class="link">VER MAS</a></button>
               <button>SUBSCRIBE</button>
             </div>
           </div>
         </div>
       </div>
-      <!-- list thumnail -->
       <div class="thumbnail">
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
+          <img src="IMAGEN/1959-Porsche-356A-Coupe-1.webp" />
           <div class="content">
             <div class="title">1959 Porsche 356A Coupe</div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/2018-Bugatti-Chiron-1.webp" />
+          <img src="IMAGEN/2018-Bugatti-Chiron-1.webp" />
           <div class="content">
             <div class="title1">2018 Bugatti Chiron</div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
+          <img src="IMAGEN/2018-Lamborghini-Aventador-S-Coupe-1.webp" />
           <div class="content">
             <div class="title2">2018 Lamborghini Aventador S Coupe</div>
           </div>
         </div>
         <div class="item">
-          <img src="img/IndexIMG/IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
+          <img src="IMAGEN/Dodge-Challenger-SRT-Hellcat-1.webp" />
           <div class="content">
             <div class="title3">2020 Dodge Challenger SRT Hellcat Redeye</div>
           </div>
         </div>
       </div>
-      <!-- next prev -->
 
       <div class="arrows">
         <button id="prev"><</button>
         <button id="next">></button>
       </div>
-      <!-- time running -->
       <div class="time"></div>
     </div>
-
-
-<script src="JS/Inicio.js"></script>
+    </main>
+    <script src="header.js"></script>
 </body>
 </html>
