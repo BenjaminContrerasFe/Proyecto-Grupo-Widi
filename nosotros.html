@@ -263,7 +263,8 @@
             <p> Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
         </footer>
         <div id="overlay" style="display:none;">
-            <audio id="sonido" src="Sonidos/Screamer/funtime-josh-screamer.mp3"></audio>
+            <audio id="sonido"
+                src="Sonidos/Screamer/funtime-josh-screamer.mp3"></audio>
             <img src="img/Screamer/Gato_comiendo_papas.gif">
         </div>
     </body>
@@ -293,6 +294,21 @@
                 header.classList.remove("shrink");
             }
         });
+
+        const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // opcional, solo animar una vez
+    }
+  });
+}, { threshold: 0.18 });
+
+/* elementos que queremos animar al aparecer */
+document.querySelectorAll('section, .C, #Num p, #G1 img, h2, h3, #Fondo').forEach(el => {
+  el.classList.add('reveal'); // poner estado inicial
+  observer.observe(el);
+});
     </script>
 
 </html>
