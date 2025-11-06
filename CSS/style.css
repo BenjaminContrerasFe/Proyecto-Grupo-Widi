@@ -270,6 +270,17 @@ main {
   color: #ffffff;
 }
 
+.title,
+.title1,
+.title2,
+.title3 {
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
 .thumbnail {
   position: absolute;
   bottom: 50px;
