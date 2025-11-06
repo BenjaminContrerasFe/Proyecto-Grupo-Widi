@@ -1,23 +1,60 @@
-const sidebar = document.getElementById('sidebar');
-const toggleTheme = document.getElementById('theme-toggle');
-const collapseBtn = document.querySelector('.toggle-sidebar');
-const collapseIcon = document.getElementById('collapse-icon');
+(function(){
+    const listElements = document.querySelectorAll('.menu__item--show');
+    const list = document.querySelector('.menu__links');
+    const menu = document.querySelector('.menu__hamburguer');
 
-toggleTheme.addEventListener('change', () => {
-  sidebar.classList.toggle('dark');
-  document.body.classList.toggle('dark');
-});
+    const addClick = ()=>{
+        listElements.forEach(element =>{
+            element.addEventListener('click', ()=>{
 
-collapseBtn.addEventListener('click', () => {
-  sidebar.classList.toggle('collapsed');
-  if(sidebar.classList.contains('collapsed')) {
-    collapseIcon.classList.remove('fa-angle-double-left');
-    collapseIcon.classList.add('fa-angle-double-right');
-  } else {
-    collapseIcon.classList.remove('fa-angle-double-right');
-    collapseIcon.classList.add('fa-angle-double-left');
-  }
-});
+                
+                let subMenu = element.children[1];
+                let height = 0;
+                element.classList.toggle('menu__item--active');
+
+
+                if(subMenu.clientHeight === 0){
+                    height = subMenu.scrollHeight;
+                }
+
+                subMenu.style.height = `${height}px`;
+
+            });
+        });
+    }
+
+    const deleteStyleHeight = ()=>{
+        listElements.forEach(element=>{
+
+            if(element.children[1].getAttribute('style')){
+                element.children[1].removeAttribute('style');
+                element.classList.remove('menu__item--active');
+            }
+
+        });
+    }
+
+
+    window.addEventListener('resize', ()=>{
+        if(window.innerWidth > 800){
+            deleteStyleHeight();
+            if(list.classList.contains('menu__links--show'))
+                list.classList.remove('menu__links--show');
+
+        }else{
+            addClick();
+        }
+    });
+
+    if(window.innerWidth <= 800){
+        addClick();
+    }
+
+    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
+
+
+
+})();
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
 
