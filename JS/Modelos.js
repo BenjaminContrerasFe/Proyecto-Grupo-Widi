@@ -42,7 +42,7 @@ const autos = [
   { id: 4, marca: 'Ferrari', nombre: 'Ferrari 488 GTB', combustible: 'nafta', favorito: false, imagen: 'img/Ferrari/Ferrari-principal.webp' },
   { id: 5, marca: 'Lamborghini', nombre: 'Lamborghini S Coupe', combustible: 'nafta', favorito: false, imagen: 'img/Lamborghini/Vista-Principal.webp' },
   { id: 6, marca: 'Mercedes', nombre: 'Mercedes-190SL', combustible: 'nafta', favorito: false, imagen: 'img/Mercedes-190SL/Mercedes-principal.webp' },
-  { id: 7, marca: 'Chevrolet', nombre: 'Chevrolet', combustible: 'nafta', favorito: false, imagen: 'img/Chevrolet-Camaro-SS1/Vista-Principal.webp' },
+  { id: 7, marca: 'Chevrolet', nombre: 'Chevrolet Camaro SS1', combustible: 'nafta', favorito: false, imagen: 'img/Chevrolet-Camaro-SS1/Vista-Principal.webp' },
   { id: 8, marca: 'Porsche', nombre: 'Porsche Taycan GTS', combustible: 'electrico', favorito: false, imagen: 'img/Porsche-Taycan-GTS/Vista-Principal.webp' },
   { id: 9, marca: 'Bugatti', nombre: 'Bugatti Chiron', combustible: 'nafta', favorito: false, imagen: 'img/Bugatti Chiron/Vista-Principal.webp' },
   { id: 10, marca: 'Porsche', nombre: 'Porsche 911', combustible: 'nafta', favorito: false, imagen: 'img/porshe911/Vista-Principal.webp' },
