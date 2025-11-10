@@ -181,6 +181,10 @@ body{
     }
 }
 
+.menu__item > .menu__link i {
+  margin-right: 8px;
+}
+
 main {
   height: calc(100vh - 70px);
   margin-top: 70px;
