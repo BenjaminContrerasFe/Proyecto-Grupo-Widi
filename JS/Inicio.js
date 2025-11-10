@@ -5,15 +5,15 @@
 
     const addClick = () => {
         listElements.forEach(element => {
-            // Evitar agregar listeners múltiples (por seguridad)
+
             if (element.dataset.listenerAdded) return;
             element.dataset.listenerAdded = "true";
 
             element.addEventListener('click', (e) => {
-                // Obtengo el enlace principal que está como hijo directo del li
+
                 const mainLink = element.querySelector(':scope > .menu__link');
 
-                // Si el click vino desde el enlace principal => prevenir y toggle
+
                 if (mainLink && mainLink.contains(e.target)) {
                     e.preventDefault();
 
@@ -27,9 +27,7 @@
 
                     subMenu.style.height = `${height}px`;
                 } else {
-                    // Si no fue el enlace principal (p. ej. un link dentro del submenú),
-                    // dejamos que el click se ejecute normalmente (navegación).
-                    // También permite que en desktop el hover siga funcionando.
+
                     return;
                 }
             });
@@ -42,7 +40,7 @@
                 element.children[1].removeAttribute('style');
                 element.classList.remove('menu__item--active');
             }
-            // permitir volver a añadir listener si fuera necesario
+
             element.removeAttribute('data-listener-added');
         });
     };
@@ -53,18 +51,31 @@
             if (list.classList.contains('menu__links--show'))
                 list.classList.remove('menu__links--show');
         } else {
-            // en viewport chico nos aseguramos de tener los listeners
+
             addClick();
         }
     });
 
-    // siempre intentar agregar los listeners al cargar
+
     addClick();
 
     menu.addEventListener('click', () =>
         list.classList.toggle('menu__links--show')
     );
 })();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".menu__link, .menu__link--inside");
+  const currentUrl = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (href === currentUrl || (href === "index.html" && currentUrl === "")) {
+      link.classList.add("active");
+    }
+  });
+});
 
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
