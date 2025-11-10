@@ -1,15 +1,63 @@
 <!doctype html>
 <html lang="es">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Deushcland</title>
   <link rel="stylesheet" href="CSS/Modelos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="CSS/header.css">
 </head>
-
 <body>
+  <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Deustchland</h1>
 
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link"><i class="fa-solid fa-house"></i>Home</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link"><i class="fa-solid fa-car"></i>Garage <img src="assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="Principal.html" class="menu__link menu__link--inside">Principal</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="Modelos.html" class="menu__link menu__link--inside">Modelos</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="#" class="menu__link"><i class="fa-solid fa-headset"></i>Soporte  <img src="assets/arrow.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="soporte.html" class="menu__link menu__link--inside">Soporte</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="terminos.html" class="menu__link menu__link--inside">Terminos</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="nosotros.html" class="menu__link menu__link--inside">Nosotros</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="Contacto.html" class="menu__link"><i class="fa-solid fa-envelope"></i>Contactos</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="assets/menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>
   <section class="arriba">
     <div class="titulo">Descubre el modelo de auto que prefieras</div>
     <p class="subtitulo">Explora los modelos más recientes y encuentra el motor y estilo que más se adapta a ti.</p>
@@ -105,6 +153,7 @@
     <p> Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
   </footer>
   <script src="JS/Modelos.js"></script>
+  <script src="JS/header.JS"></script>
 </body>
 
 </html>
