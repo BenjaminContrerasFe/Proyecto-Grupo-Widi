@@ -3,58 +3,69 @@
     const list = document.querySelector('.menu__links');
     const menu = document.querySelector('.menu__hamburguer');
 
-    const addClick = ()=>{
-        listElements.forEach(element =>{
-            element.addEventListener('click', ()=>{
+    const addClick = () => {
+        listElements.forEach(element => {
+            // Evitar agregar listeners múltiples (por seguridad)
+            if (element.dataset.listenerAdded) return;
+            element.dataset.listenerAdded = "true";
 
-                
-                let subMenu = element.children[1];
-                let height = 0;
-                element.classList.toggle('menu__item--active');
+            element.addEventListener('click', (e) => {
+                // Obtengo el enlace principal que está como hijo directo del li
+                const mainLink = element.querySelector(':scope > .menu__link');
 
+                // Si el click vino desde el enlace principal => prevenir y toggle
+                if (mainLink && mainLink.contains(e.target)) {
+                    e.preventDefault();
 
-                if(subMenu.clientHeight === 0){
-                    height = subMenu.scrollHeight;
+                    let subMenu = element.children[1];
+                    let height = 0;
+                    element.classList.toggle('menu__item--active');
+
+                    if (subMenu.clientHeight === 0) {
+                        height = subMenu.scrollHeight;
+                    }
+
+                    subMenu.style.height = `${height}px`;
+                } else {
+                    // Si no fue el enlace principal (p. ej. un link dentro del submenú),
+                    // dejamos que el click se ejecute normalmente (navegación).
+                    // También permite que en desktop el hover siga funcionando.
+                    return;
                 }
-
-                subMenu.style.height = `${height}px`;
-
             });
         });
-    }
+    };
 
-    const deleteStyleHeight = ()=>{
-        listElements.forEach(element=>{
-
-            if(element.children[1].getAttribute('style')){
+    const deleteStyleHeight = () => {
+        listElements.forEach(element => {
+            if (element.children[1].getAttribute('style')) {
                 element.children[1].removeAttribute('style');
                 element.classList.remove('menu__item--active');
             }
-
+            // permitir volver a añadir listener si fuera necesario
+            element.removeAttribute('data-listener-added');
         });
-    }
+    };
 
-
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 800){
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 800) {
             deleteStyleHeight();
-            if(list.classList.contains('menu__links--show'))
+            if (list.classList.contains('menu__links--show'))
                 list.classList.remove('menu__links--show');
-
-        }else{
+        } else {
+            // en viewport chico nos aseguramos de tener los listeners
             addClick();
         }
     });
 
-    if(window.innerWidth <= 800){
-        addClick();
-    }
+    // siempre intentar agregar los listeners al cargar
+    addClick();
 
-    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
-
-
-
+    menu.addEventListener('click', () =>
+        list.classList.toggle('menu__links--show')
+    );
 })();
+
 let nextDom = document.getElementById("next");
 let prevDom = document.getElementById("prev");
 
