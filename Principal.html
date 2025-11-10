@@ -190,132 +190,97 @@
     <p> Deushcland@gmail.com | Tel: +54 299 1234-5678</p>
   </footer>
   <script>
-    (function(){
-    const listElements = document.querySelectorAll('.menu__item--show');
-    const list = document.querySelector('.menu__links');
-    const menu = document.querySelector('.menu__hamburguer');
-
-    const addClick = () => {
-        listElements.forEach(element => {
-
-            if (element.dataset.listenerAdded) return;
-            element.dataset.listenerAdded = "true";
-
-            element.addEventListener('click', (e) => {
-
-                const mainLink = element.querySelector(':scope > .menu__link');
-
-
-                if (mainLink && mainLink.contains(e.target)) {
-                    e.preventDefault();
-
-                    let subMenu = element.children[1];
-                    let height = 0;
-                    element.classList.toggle('menu__item--active');
-
-                    if (subMenu.clientHeight === 0) {
-                        height = subMenu.scrollHeight;
-                    }
-
-                    subMenu.style.height = `${height}px`;
-                } else {
-
-                    return;
-                }
-            });
-        });
-    };
-
-    const deleteStyleHeight = () => {
-        listElements.forEach(element => {
-            if (element.children[1].getAttribute('style')) {
-                element.children[1].removeAttribute('style');
-                element.classList.remove('menu__item--active');
-            }
-
-            element.removeAttribute('data-listener-added');
-        });
-    };
-
-    window.addEventListener('resize', () => {
-        if (window.innerWidth > 800) {
-            deleteStyleHeight();
-            if (list.classList.contains('menu__links--show'))
-                list.classList.remove('menu__links--show');
-        } else {
-
-            addClick();
-        }
-    });
-
-
-    addClick();
-
-    menu.addEventListener('click', () =>
-        list.classList.toggle('menu__links--show')
-    );
-})();
-
 document.addEventListener("DOMContentLoaded", () => {
+  /* ================================
+     MENÚ DESPLEGABLE Y HAMBURGUESA
+  ==================================*/
+  const listElements = document.querySelectorAll(".menu__item--show");
+  const list = document.querySelector(".menu__links");
+  const menu = document.querySelector(".menu__hamburguer");
+
+  const addClick = () => {
+    listElements.forEach(element => {
+      element.addEventListener("click", e => {
+        // Evita salto solo en el enlace principal
+        if (e.target.classList.contains("menu__link")) {
+          e.preventDefault();
+        }
+
+        let subMenu = element.children[1];
+        let height = 0;
+        element.classList.toggle("menu__item--active");
+
+        if (subMenu.clientHeight === 0) {
+          height = subMenu.scrollHeight;
+        }
+
+        subMenu.style.height = `${height}px`;
+      });
+    });
+  };
+
+  const deleteStyleHeight = () => {
+    listElements.forEach(element => {
+      if (element.children[1].getAttribute("style")) {
+        element.children[1].removeAttribute("style");
+        element.classList.remove("menu__item--active");
+      }
+    });
+  };
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
+      deleteStyleHeight();
+      if (list.classList.contains("menu__links--show"))
+        list.classList.remove("menu__links--show");
+    }
+  });
+
+  addClick();
+
+  menu.addEventListener("click", () => {
+    list.classList.toggle("menu__links--show");
+  });
+
+  /* ================================
+     MARCAR ENLACE ACTIVO EN EL MENÚ
+  ==================================*/
   const links = document.querySelectorAll(".menu__link, .menu__link--inside");
   const currentUrl = window.location.pathname.split("/").pop();
 
   links.forEach(link => {
     const href = link.getAttribute("href");
-
     if (href === currentUrl || (href === "index.html" && currentUrl === "")) {
       link.classList.add("active");
     }
   });
+
+  /* ================================
+     CARRUSEL AUTOMÁTICO Y CON FLECHAS
+  ==================================*/
+  let current = 0;
+  const slides = document.querySelectorAll(".slide");
+  const next = document.querySelector(".arrow.right");
+  const prev = document.querySelector(".arrow.left");
+
+  function showSlide(index) {
+    slides[current].classList.remove("active");
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add("active");
+  }
+
+  next.addEventListener("click", () => {
+    showSlide(current + 1);
+  });
+
+  prev.addEventListener("click", () => {
+    showSlide(current - 1);
+  });
+
+  // Auto-slide cada 6 segundos
+  setInterval(() => showSlide(current + 1), 6000);
 });
-
-    const botonTema = document.getElementById("boton-tema");
-    const body = document.body;
-
-    // evento q cambia al hacer clic
-    botonTema.addEventListener("click", () => {
-      body.classList.toggle("tema-claro"); // activa o desactiva el modo
-
-      //  cambia dependiendo el tema
-      if (body.classList.contains("tema-claro")) {
-        botonTema.textContent = "🌞 Modo oscuro";
-      } else {
-        botonTema.textContent = "🌙 Modo claro";
-      }
-    });
-    //header
-    window.addEventListener("scroll", function () {
-      const header = document.querySelector("header");
-      if (window.scrollY > 50) {
-        header.classList.add("shrink");
-      } else {
-        header.classList.remove("shrink");
-      }
-    });
-    //deslizar
-   let current = 0;
-const slides = document.querySelectorAll(".slide");
-const next = document.querySelector(".arrow.right");
-const prev = document.querySelector(".arrow.left");
-
-function showSlide(index) {
-  slides[current].classList.remove("active");
-  current = (index + slides.length) % slides.length;
-  slides[current].classList.add("active");
-}
-
-// Flechas funcionales
-next.addEventListener("click", () => {
-  showSlide(current + 1);
-});
-
-prev.addEventListener("click", () => {
-  showSlide(current - 1);
-});
-
-// Cambio automático
-setInterval(() => showSlide(current + 1), 6000);
-  </script>
+</script>
 </body>
 
 </html>
