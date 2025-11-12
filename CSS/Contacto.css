@@ -1,17 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
 
 }
+
 :root {
   --color-fondo: #181717;
   --color-texto: #fff;
@@ -22,15 +23,16 @@ body {
   --color-borde-tarjeta: #504d4d;
   --color-fot: #0e0e0e;
 }
+
 body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--color-fondo);
-      color: var(--color-texto);
-      transition: background 0.3s, color 0.3s;
-    }
-    
-    body.tema-claro {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  transition: background 0.3s, color 0.3s;
+}
+
+body.tema-claro {
   --color-fondo: #f2f2f2;
   --color-texto: #111;
   --color-header: linear-gradient(to bottom, #fff, #999999);
@@ -43,144 +45,147 @@ body {
 
 
 main {
-    color: #111;
-    
-    max-width: 900px;
-    margin: 200px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 5px 4px 15px 0px rgba(207, 187, 187, 0.735);
+  max-width: 900px;
+  margin: 200px auto;
+  padding: 20px;
+  background: #000000;
+  border-radius: 12px;
+  box-shadow: 5px 4px 15px 0px #46b9fa;
 }
 
-.titulo {
-    text-align: center;
-    margin-bottom: 25px;
+.Titulo {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #46b9fa;
 }
 
-.titulo h2 {
-    font-size: 32px;
-    color: #0d1b2a;
-    margin-bottom: 10px;
+.Titulo h2 {
+  font-size: 32px;
+  color: #46b9fa;
+  margin-bottom: 10px;
 }
 
-.titulo p {
-    font-size: 16px;
-    color: #555;
+.Titulo p {
+  font-size: 16px;
+  color: #46b9fa;
 }
 
 .contenido {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    /* imagen a la izquierda y texto al lado */
-    gap: 15px 20px;
-    align-items: center;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.188);
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  /* imagen a la izquierda y texto al lado */
+  gap: 15px 20px;
+  align-items: center;
+  background: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px #46b9fa;
 }
 
 .contenido img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    object-fit: cover;
-    /* Cover <------ la imagen se recorta para llenar el lugar dnd va la imagen.*/
-    border: 2px solid #0d1b2a;
+  background-color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Cover <------ la imagen se recorta para llenar el lugar dnd va la imagen.*/
+  border: 2px solid #0d1b2a;
 }
 
 .contenido p {
-    margin: 10px;
-    text-align: justify;
-    line-height: 1.2;
-    letter-spacing: -0.2px;
-    /* letras ma juntas */
-    font-size: 15px;
+  margin: 10px;
+  text-align: justify;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  /* letras ma juntas */
+  font-size: 15px;
+  color: #46b9fa;
 }
 
 .formulario {
-    flex: 1;
-    margin-top: 20px;
+  flex: 1;
+  margin-top: 20px;
 }
 
 /* ESTILO GENERAL DEL FORMULARIO */
 form {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    font-family: Arial, sans-serif;
-    color: #333;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 fieldset {
-    border: none;
-    padding: 0;
+  border: none;
+  padding: 0;
 }
 
 /* LABELS */
 label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
 }
 
 input[type="text"],
 input[type="email"],
 select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: border-color 0.3s;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 select:focus {
-    border-color: #4fc7f7;
-    border: 2px solid #4fc7f7;
-    outline: none;
+  border-color: #4fc7f7;
+  border: 2px solid #4fc7f7;
+  outline: none;
 }
 
 .generos label,
 .notify label {
-    display: inline-block;
-    margin-right: 20px;
-    font-weight: normal;
-    vertical-align: middle;
+  display: inline-block;
+  margin-right: 20px;
+  font-weight: normal;
+  vertical-align: middle;
 }
 
 .generos input[type="radio"],
 .notify input[type="checkbox"] {
-    margin-right: 5px;
-    vertical-align: middle;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 #enviar {
-    width: 100%;
-    padding: 12px;
-    background-color: rgb(131, 130, 125);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #enviar:hover {
-    background-color: #4fc7f7;
+  background-color: #46b9fa;
 }
+
 .foot {
   background-color: var(--color-fot);
-  border-top: 3px solid #4fc7f7; /* Línea xd */
+  border-top: 3px solid #4fc7f7;
+  /* Línea xd */
   padding: 40px 80px;
   font-family: Arial, sans-serif;
   color: #4fc7f7;
@@ -194,7 +199,7 @@ select:focus {
 }
 
 .foot-column {
-   display: flex;
+  display: flex;
   flex-direction: column;
   min-width: 200px;
   margin: 10px;
