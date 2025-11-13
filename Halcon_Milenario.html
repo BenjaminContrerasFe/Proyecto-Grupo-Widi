@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/preloader.css">
 </head>
 <body>
+<div class="loader-container">
+  <div class="loader-content">
+    <div class="traffic-light">
+      <div class="light-row"><div class="light red-light"></div></div>
+      <div class="light-row"><div class="light yellow-light"></div></div>
+      <div class="light-row"><div class="light green-light"></div></div>
+    </div>
+
+    <div class="loading-status"></div>
+  </div>
+</div>
      <nav class="menu">
         <section class="menu__container">
             <h1 class="menu__logo">Deustchland</h1>
@@ -205,6 +217,7 @@
         });
     </script>
     <script src="JS/header.JS"></script>
+    <script src="JS/Preloader.JS"></script>
 </body>
 
 </html>
