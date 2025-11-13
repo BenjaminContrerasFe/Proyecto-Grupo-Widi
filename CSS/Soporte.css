@@ -36,12 +36,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--color-fot);
     color: var(--celeste-fot);
     line-height: 1.6;
     margin-top: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -178,4 +186,14 @@ footer {
 
 .foot-bottom p {
   margin: 10px 0;
+}
+
+
+.foot {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+main.container {
+    flex: 1;
 }
