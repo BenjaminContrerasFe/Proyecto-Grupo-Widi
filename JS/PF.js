@@ -3,7 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
   const noResults = document.getElementById("noResults");
 
-  // --- Buscador tipo Google ---
+  // Mostrar solo las primeras 5 preguntas al cargar la página
+  const initialVisibleCount = 5;
+  faqItems.forEach((item, index) => {
+    item.style.display = index < initialVisibleCount ? "block" : "none";
+  });
+
+  // Buscador tipo Google
   searchInput.addEventListener("input", () => {
     const term = searchInput.value.trim().toLowerCase();
     let visibleCount = 0;
@@ -12,16 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const text = item.innerText.toLowerCase();
       const matches = term
         .split(" ")
-        .some(word => text.includes(word)); // busca por palabras sueltas
+        .some(word => text.includes(word));
 
-      item.style.display = matches || term === "" ? "block" : "none";
-      if (matches || term === "") visibleCount++;
+      // Si hay término de búsqueda, mostrar todas las coincidencias
+      // Si no hay término, mostrar solo las primeras 5
+      if (term === "") {
+        const index = Array.from(faqItems).indexOf(item);
+        item.style.display = index < initialVisibleCount ? "block" : "none";
+        if (index < initialVisibleCount) visibleCount++;
+      } else {
+        item.style.display = matches ? "block" : "none";
+        if (matches) visibleCount++;
+      }
     });
 
     noResults.style.display = visibleCount ? "none" : "block";
   });
 
-  // --- Acordeón sin lag, clic en todo el div ---
+  // Acordeón sin lag, clic en todo el div
   faqItems.forEach(item => {
     const title = item.querySelector("h3");
 
@@ -35,7 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     item.addEventListener("click", (e) => {
       e.stopPropagation();
-
       const active = item.classList.contains("active");
 
       // Cierra todos
