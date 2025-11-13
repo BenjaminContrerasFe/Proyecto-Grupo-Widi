@@ -288,17 +288,6 @@
         const botonTema = document.getElementById("boton-tema");
         const body = document.body;
 
-        // evento q cambia al hacer clic
-        botonTema.addEventListener("click", () => {
-            body.classList.toggle("tema-claro"); // activa o desactiva el modo
-
-            //  cambia dependiendo el tema
-            if (body.classList.contains("tema-claro")) {
-                botonTema.textContent = "🌞 Modo oscuro";
-            } else {
-                botonTema.textContent = "🌙 Modo claro";
-            }
-        });
         //header
         window.addEventListener("scroll", function () {
             const header = document.querySelector("header");
