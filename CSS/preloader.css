@@ -7,9 +7,10 @@
   height: 100%;
   background: #000;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 99999; /* más alto que todo */
+  z-index: 99999;
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease, visibility 0.5s ease;
@@ -250,3 +251,20 @@
   }
 }
 
+.loading-status {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  animation: statusUpdate 4s ease-in-out infinite;
+  display: block;
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* espacio entre el semáforo y el texto */
+}

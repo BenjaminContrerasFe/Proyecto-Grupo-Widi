@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Redirigir después del fade-in
       setTimeout(() => {
         window.location.href = url;
-      }, 500); // ← este tiempo define cuánto se ve el loader antes del cambio
+      }, 1000); // ← este tiempo define cuánto se ve el loader antes del cambio
     });
   });
 });
