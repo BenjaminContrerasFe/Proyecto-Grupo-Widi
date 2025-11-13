@@ -22,6 +22,7 @@ body {
   margin: 0;
   background: var(--color-fondo);
   color: var(--color-texto);
+  padding: 80px;
 }
 
 
