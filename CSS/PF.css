@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
+  --color-fondo: #181717;
   --color-fot: #0e0e0e;
   --color-fot-suave: #1c1c1c;
   --celeste-fot: #4fc7f7;
@@ -11,14 +12,15 @@
 }
 
 body {
-  background-color: var(--color-fot);
+  background-color: var(--color-fondo);
   font-family: 'Poppins', sans-serif;
   color: var(--color-texto);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 80px 20px;
+  margin: 0;
 }
 
 .container {
@@ -80,7 +82,7 @@ body {
 
 .faq-item h3 {
   margin: 0;
-  color: var(--celeste-fot);
+  color: var(--color-texto);
   font-size: 1.1rem;
 }
 
@@ -107,3 +109,38 @@ body {
   margin-top: 20px;
   font-size: 1rem;
 }
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 1rem;
+  color: var(--celeste-fot);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
+.faq-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+  color: var(--celeste-fot);
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+

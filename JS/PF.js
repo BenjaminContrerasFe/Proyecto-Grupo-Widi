@@ -3,35 +3,58 @@ document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item");
   const noResults = document.getElementById("noResults");
 
-
-  function fuzzyMatch(text, term) {
-    text = text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    term = term.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    const words = term.split(/\s+/).filter(Boolean);
-    return words.every(word => text.includes(word));
-  }
-
+  // --- Buscador tipo Google ---
   searchInput.addEventListener("input", () => {
-    const term = searchInput.value.toLowerCase().trim();
-    let anyVisible = false;
+    const term = searchInput.value.trim().toLowerCase();
+    let visibleCount = 0;
 
     faqItems.forEach(item => {
-      const text = item.textContent.toLowerCase();
-      if (term === "" || fuzzyMatch(text, term)) {
-        item.style.display = "block";
-        anyVisible = true;
-      } else {
-        item.style.display = "none";
-      }
+      const text = item.innerText.toLowerCase();
+      const matches = term
+        .split(" ")
+        .some(word => text.includes(word)); // busca por palabras sueltas
+
+      item.style.display = matches || term === "" ? "block" : "none";
+      if (matches || term === "") visibleCount++;
     });
 
-    noResults.style.display = anyVisible ? "none" : "block";
+    noResults.style.display = visibleCount ? "none" : "block";
   });
 
-  // Acordeón rápido (como Google)
+  // --- Acordeón sin lag, clic en todo el div ---
   faqItems.forEach(item => {
-    item.addEventListener("click", () => {
-      item.classList.toggle("active");
+    const title = item.querySelector("h3");
+
+    // Agregamos la flecha si no existe
+    if (!item.querySelector(".arrow")) {
+      const arrow = document.createElement("span");
+      arrow.className = "arrow";
+      arrow.innerHTML = "&#9660;"; // ▼
+      title.appendChild(arrow);
+    }
+
+    item.addEventListener("click", (e) => {
+      e.stopPropagation();
+
+      const active = item.classList.contains("active");
+
+      // Cierra todos
+      faqItems.forEach(i => {
+        i.classList.remove("active");
+        const p = i.querySelector("p");
+        const arrow = i.querySelector(".arrow");
+        p.style.maxHeight = null;
+        if (arrow) arrow.innerHTML = "&#9660;"; // ▼
+      });
+
+      // Si estaba cerrado, lo abre
+      if (!active) {
+        item.classList.add("active");
+        const p = item.querySelector("p");
+        const arrow = item.querySelector(".arrow");
+        p.style.maxHeight = p.scrollHeight + "px";
+        if (arrow) arrow.innerHTML = "&#9650;"; // ▲
+      }
     });
   });
 });
