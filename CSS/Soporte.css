@@ -1,3 +1,45 @@
+:root {
+    --color-primary: #1a202c;    /* Negro/Azul Oscuro */
+    --color-secondary: #2d3748; /* Gris Oscuro */
+    --color-accent: #3182ce;     /* Azul Xbet */
+    --color-accent-hover: #2b6cb0;
+    --color-green: #38a169;      /* Verde para cuotas */
+    --color-text: #e2e8f0;       
+    --color-text-muted: #a0aec0;
+    --border-color: #4a5568;
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .simple-page-header {
     background-color: var(--color-secondary);
     padding: 2rem;
