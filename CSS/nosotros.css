@@ -61,6 +61,8 @@ body {
 
 main {
     padding-top: 60px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 #Quienes-somos {
@@ -96,7 +98,7 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 98vw;
+    width: 100vw;
     height: min(500px, 100vw);
 }
 
