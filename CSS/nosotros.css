@@ -126,7 +126,7 @@ p {
     padding: 3vw;
     border-radius: clamp(20px, 1vw, 20px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-    width: 70vw;
+    width: 80vw;
     margin-top: 60px;
 }
 
