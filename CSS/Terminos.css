@@ -31,6 +31,8 @@ body {
     font-family: Arial, sans-serif;
     background: var(--color-fot);
     color: var(--blanco);
+    padding: 80px;
+    margin: 0;
 }  
 
 /* HEADER */
