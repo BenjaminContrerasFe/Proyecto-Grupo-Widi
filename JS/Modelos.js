@@ -11,7 +11,7 @@ const marcas = [
   { id: 'Porsche', nombre: 'Porsche', logo: 'img/Logos/porsche-logo-18.png' },
   { id: 'Tesla', nombre: 'Tesla', logo: 'img/Logos/Tesla_logo_PNG5.png' },
   { id: 'Chevrolet', nombre: 'Chevrolet', logo: 'img/Logos/Chevrolet_logo_PNG9.png' },
-  { id: 'Honda', nombre: 'Honda', logo: 'img/Logos/Honda-Moto-Logo_PNG1.png' },
+  { id: 'Lamborghini', nombre: 'Lamborghini', logo: 'img/Logos/Lamborghini_logo_PNG1.png' },
   { id: 'Ford', nombre: 'Ford', logo: 'img/Logos/Ford-logo-1.png' },
   { id: 'Bugatti', nombre: 'Bugatti', logo: 'img/Logos/Bugatti-Logo-PNG.png' },
   { id: 'Star', nombre: 'Star Wars', logo: 'img/Logos/Star-Wars-logo-3.png' }
