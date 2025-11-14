@@ -29,16 +29,19 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: var(--color-fot);
+    background:
+        radial-gradient(circle at 30% 20%, rgba(58, 107, 177, 0.06) 0%, transparent 60%),
+        linear-gradient(180deg, var(--color-fot), var(--color-fot-suave));
     color: var(--blanco);
-    padding: 80px;
+    padding: 80px 0 0 0;
     margin: 0;
-}  
+}
 
 /* HEADER */
 header {
     background: var(--color-header);
-    padding: 15px 30px;
+    padding: 40px 30px; /* más espacio para que el h1 no choque */
+    position: relative;
 }
 
 .cont-header {
@@ -65,6 +68,7 @@ header h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    top: 15px; /* centrado visual mejorado */
     z-index: 5;
 }
 
@@ -140,7 +144,7 @@ header h1 {
 
 /* MAIN */
 main {
-    padding: 40px;
+    padding: 10px;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -214,11 +218,10 @@ button:hover {
     cursor: pointer;
 }
 
-/* ==============inicio footer============== */
+/* ============== FOOTER ============== */
 .foot {
     background-color: var(--color-fot);
     border-top: 3px solid var(--celeste-fot);
-    /* Línea xd */
     padding: 40px 80px;
     font-family: Arial, sans-serif;
     color: var(--celeste-fot);
@@ -248,7 +251,7 @@ button:hover {
     display: block;
     color: var(--color-texto);
     text-decoration: none;
-    margin-bottom: 8px;
+    margin-bottom: 12px; /* SEPARACIÓN AMPLIADA */
     font-size: 0.95rem;
 }
 
@@ -266,7 +269,7 @@ button:hover {
 .foot-bottom a {
     color: var(--celeste-fot);
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 10px; /* SEPARACIÓN AMPLIADA */
 }
 
 .foot-bottom a:hover {
@@ -282,11 +285,10 @@ footer {
     padding: 20px;
     font-size: 14px;
     background-color: var(--color-fot);
-    color: #00b3ff;
+    color: var(--celeste-fot);
 }
 
 li {
     list-style: none;
 }
-
-/* ==============fin footer============== */
+/* ============== FIN FOOTER ============== */
