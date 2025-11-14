@@ -13,12 +13,13 @@ const marcas = [
   { id: 'Chevrolet', nombre: 'Chevrolet', logo: 'img/Logos/Chevrolet_logo_PNG9.png' },
   { id: 'Honda', nombre: 'Honda', logo: 'img/Logos/Honda-Moto-Logo_PNG1.png' },
   { id: 'Ford', nombre: 'Ford', logo: 'img/Logos/Ford-logo-1.png' },
-  { id: 'Bugatti', nombre: 'Bugatti', logo: 'img/Logos/Bugatti-Logo-PNG.png' }
+  { id: 'Bugatti', nombre: 'Bugatti', logo: 'img/Logos/Bugatti-Logo-PNG.png' },
+  { id: 'Star', nombre: 'Star Wars', logo: 'img/Logos/Star-Wars-logo-3.png' }
 ];
 //RUTAS DE HTML
 const rutas = {
   1: 'Audi-R8.html',
-  2: 'Lamborghini-350-GT.html',//maxi pone las rutas aca
+  2: 'Lamborghini-350-GT.html',
   3: 'Ferrari-Challenger-Stradale.html',
   4: 'Ferrari-488.html',
   5: 'Lamborghini-S-Coupe.html',
@@ -30,7 +31,8 @@ const rutas = {
   11: 'Porsche-356A.html',
   12: 'Nissan-Gt-R35.html',
   13: 'Ford-Mustang-Boss.html',
-  14: 'Dino-208.html'
+  14: 'Dino-208.html',
+  15: 'X-Wing.html'
   
 };
 
@@ -49,7 +51,8 @@ const autos = [
   { id: 11, marca: 'Porsche', nombre: 'Porsche 356A', combustible: 'nafta', favorito: false, imagen: 'img/Porsche356A/Vista-Principal.webp' },
   { id: 12, marca: 'Nissan', nombre: 'Nissan GT R-35', combustible: 'nafta', favorito: false, imagen: 'img/Gtr-35/Vista-Principal.webp' },
   { id: 13, marca: 'Ford', nombre: '1969 Ford Mustang Boss 429 ', combustible: 'nafta', favorito: false, imagen: 'img/Mustang/Vista-Principal.webp' },
-  { id: 14, marca: 'Ferrari', nombre: '1975 Ferrari Dino 208 GT4', combustible: 'nafta', favorito: false, imagen: 'img/Dino-208/Ferrari-Dino-208.webp' }
+  { id: 14, marca: 'Ferrari', nombre: '1975 Ferrari Dino 208 GT4', combustible: 'nafta', favorito: false, imagen: 'img/Dino-208/Ferrari-Dino-208.webp' },
+  { id: 15, marca: 'Star', nombre: 'X-wing', combustible: 'Electrico', favorito: false, imagen: 'img/X-wing/Vista-Principal.png' }
 ];
 
 // REFERENCIAS HTML
